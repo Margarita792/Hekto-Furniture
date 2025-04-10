@@ -1,0 +1,58 @@
+.containerOrderCompleted{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 625px;
+    height: 326px;
+}
+.wrapImage {
+    width: 89px;
+    height: 89px;
+}
+.image2{
+    position: relative;
+    left: 12px;
+    bottom: 78px;
+}
+.image3{
+    position: relative;
+    left: 20px;
+    bottom: 130px;
+}
+.title{
+    font-size: 36px;
+    color: rgba(16, 23, 80, 1);
+    font-weight: bold;
+    width: 480px;
+}
+.text{
+    font-size: 16px;
+    color: rgba(141, 146, 167, 1);
+    width: 600px;
+    text-align: center;
+}
+.button {
+    width: 208px;
+    height: 59px;
+    background-color: rgba(255, 23, 136, 1);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.clock {
+    position: relative;
+    bottom: 50px;
+}
+.checklist {
+    position: relative;
+    top: 80px;
+    left: 40px;
+}

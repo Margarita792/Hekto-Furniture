@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.image {
+    width: 600px;
+}
+.button {
+    background-color: rgba(251, 46, 134, 1);
+    width: 165px;
+    height: 44px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}

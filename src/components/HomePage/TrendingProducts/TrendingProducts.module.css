@@ -1,0 +1,140 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   margin-bottom: 125px;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 39px;
+}
+.wrapCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 270px;
+    height: 350px;
+    margin: 0px 15px 0px 15px;
+
+}
+
+.innerImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 247px;
+    height: 224px;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+}
+.innerText {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width: 247px;
+    height: 95px;
+}
+.titleContainer {
+    color: rgba(21, 24, 117, 1);
+    font-size: 45px;
+    font-weight: bold;
+}
+.textInnerText {
+    color: rgba(21, 24, 117, 1);
+    font-size: 16px;
+    font-weight: bold;
+}
+.innerPrice {
+    display: flex;
+    flex-wrap: wrap;
+}
+.newPrice {
+    color: rgba(21, 24, 117, 1);
+    font-weight: bold;
+    margin-right: 12px;
+}
+.oldPrice {
+    color:rgba(21, 24, 117, 0.3);
+    text-decoration: line-through;
+}
+.discountSection {
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.wrapDiscountClock {
+    width: 420px;
+    height: 270px;
+    background-color: rgba(255, 246, 251, 1);
+    padding-left: 25px;
+    padding-top: 34px;
+    margin: 0px 15px 0px 15px;
+}
+.title {
+    color: rgba(21, 24, 117, 1);
+    font-size: 26px;
+    font-weight: bolder;
+    margin-top: 0px;
+    
+}
+.text {
+    color:rgba(251, 46, 134, 1);
+    font-weight: bolder;
+    text-decoration:underline;
+    font-size: 16px;
+}
+.clock {
+    position: relative;
+    bottom: 70px;
+    left: 200px;
+}
+.wrapDiscountShelf {
+    background-color:rgba(238, 239, 251, 1);
+    width: 420px;
+    height: 270px;
+    padding-left: 25px;
+    padding-top: 24px;
+    margin: 0px 15px 0px 15px;
+}
+.shelf {
+    position: relative;
+    left: 100px;
+}
+.innerDiscountCard {
+    width: 267px;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    margin-bottom: 20px;
+}
+.innerImageDiscount {
+    width: 100px;
+    height: 74px;
+    background-color: rgba(245, 246, 248, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 9px;
+}
+.textDiscount {
+    color: rgba(21, 24, 117, 1);
+    font-weight: bold;
+
+}
+.textOldPrice {
+    color: rgba(21, 24, 117, 1);
+    text-decoration: line-through;
+}
+.link {
+    text-decoration: none;
+}

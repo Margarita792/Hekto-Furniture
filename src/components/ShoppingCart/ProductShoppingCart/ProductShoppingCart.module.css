@@ -1,0 +1,134 @@
+.container {
+    max-height: 100%;
+    margin-left: 20px;
+    margin-right: 0px;
+    width: 702px;
+    /* justify-content: center; */
+}
+
+.wrapper {
+    max-height: 100%;
+    width: 750px;
+}
+
+.wrapTitle {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+    margin-top: 75px;
+    width: 700px;
+}
+
+.titleProduct {
+    font-size: 20px;
+    color: #1D3178;
+    width: 280px;
+    font-weight: bold;
+}
+
+.titlePrice {
+    font-size: 20px;
+    color: #1D3178;
+    width: 120px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.titleQuantity {
+    font-size: 20px;
+    color: #1D3178;
+    width: 150px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.titleTotal {
+    font-size: 20px;
+    color: #1D3178;
+    width: 140px;
+    font-weight: bold;
+    text-align: center;
+}
+.wrapProduct {
+    border-bottom: 2px solid rgba(225, 225, 228, 1);
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 700px;
+}
+.wrapImageText {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+}
+.imgProduct {
+    width: 80px;
+    height: 80px;
+}
+.imgDelete {
+    position: relative;
+    bottom: 70px;
+    right: 10px;
+}
+.innerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.textProduct {
+    font-size: 14px;
+    margin: 3px 0px 1.5px 0px;
+}
+.textColor {
+    font-size: 14px;
+    color:rgba(161, 168, 193, 1);
+    margin: 3px 0px 1.5px 0px;
+}
+.textSize {
+    font-size: 14px;
+    color:rgba(161, 168, 193, 1);
+    margin: 3px 0px 1.5px 0px;
+}
+.wrapPrice {
+    width: 120px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.textPrice {
+    color: #1D3178;
+    font-weight: bold;
+}
+.wrapButton {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+.button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color:rgb(214, 215, 220);
+    color:rgb(147, 148, 149);
+}
+.input {
+    width: 40px;
+    height: 18px;
+    border: none;
+    background-color:rgb(241, 242, 246);
+    outline: none;
+    color:rgb(147, 148, 149);
+    text-align: center;
+}
+.wrapTotal {
+    width: 150px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.textTotal {
+    color: #1D3178;
+    font-weight: bold;
+}

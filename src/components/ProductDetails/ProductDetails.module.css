@@ -1,0 +1,54 @@
+.container {
+    height: 550px;
+    background-color: rgba(249, 248, 254, 1);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 910px;
+    
+}
+
+.wrapTitle {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 580px;
+}
+
+.textTitleDescription {
+    color: #151875;
+    font-size: 24px;
+    text-decoration: underline;
+    margin-right: 22px;
+}
+.textTitleVarius{
+    color: #151875;
+    font-size: 24px; 
+}
+.textTitleMoredetails {
+    color: #151875;
+    font-size: 24px;
+}
+
+.textTitle {
+    color: #151875;
+    font-size: 24px;
+    margin: 0px 22px 0px 22px;
+}
+
+.text {
+    font-size: 14px;
+    color: rgba(169, 172, 198, 1);
+}
+
+.wrapIconText {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img {
+    margin-right: 8px;
+}

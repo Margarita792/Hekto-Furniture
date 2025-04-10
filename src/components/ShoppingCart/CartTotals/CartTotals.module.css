@@ -1,0 +1,96 @@
+
+.container {
+    width: 372px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 75px;
+}
+.titleContainer {
+    color: rgba(29, 49, 120, 1);
+    font-size: 20px;
+    font-weight: bold;
+    width: 165px;
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+.wrapperCartTotals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 371px;
+    height: 284px;
+    background-color: rgba(244, 244, 252, 1);
+    border-radius: 3px;
+}
+
+.innerSubtotalsCartTotals {
+    width: 310px;
+    height: 40px;
+    border-bottom: 1px solid rgba(232, 230, 241, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textSubtotalsCartTotals {
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgba(29, 49, 120, 1);
+}
+
+.subtotalsPriceCartTotals {
+    font-size: 16px;
+    color: rgba(21, 36, 94, 1);
+}
+
+.innerCartTotals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 310px;
+    height: 40px;
+    border-bottom: 1px solid rgba(232, 230, 241, 1);
+}
+
+.textCartTotals {
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgba(29, 49, 120, 1);
+}
+
+.totalsPriceCartTotals {
+    font-size: 16px;
+    color: rgba(21, 36, 94, 1);
+}
+
+.innerIconTextCartTotals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    height: 90px;
+}
+
+.textShoppingCartTotals {
+    color: rgba(138, 145, 171, 1);
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.buttonCartTotals {
+    width: 312px;
+    height: 40px;
+    background-color: rgba(25, 209, 111, 1);
+    border: 1px solid rgba(25, 209, 111, 1);
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}

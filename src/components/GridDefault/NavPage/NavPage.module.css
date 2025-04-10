@@ -1,0 +1,28 @@
+.container {
+    background-color: rgba(246, 245, 255, 1);
+}
+.wrap {
+    width: 700px;
+    height: 149px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 133px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.title {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.inner {
+   display: flex;
+   flex-wrap: wrap;
+}
+.redText {
+    color: rgba(251, 46, 134, 1);
+    margin-left: 12px;
+}

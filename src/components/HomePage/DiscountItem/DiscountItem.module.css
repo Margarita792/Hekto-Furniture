@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 79px;
+}
+
+.titleСontainer {
+    color: #151875;
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 19px;
+}
+
+.wrapTitle {
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.textRed {
+    margin: 0px 60px 0px 60px;
+    color: rgba(251, 73, 151, 1);
+    text-decoration: underline;
+}
+
+.textBlue {
+    color: #151875;
+    margin: 0px 60px 0px 60px;
+}
+
+.titleSectionText {
+    color: #151875;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.redTextSectionText {
+    color: rgba(251, 73, 151, 1);
+    font-size: 21px;
+}
+
+.desctiption {
+    color: rgba(183, 186, 203, 1);
+    font-size: 17px;
+    width: 480px;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.wrapperText {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text {
+    color: rgba(184, 184, 220, 1);
+    margin: 10px 22px px 22px;
+    width: 250px;
+}
+
+.button {
+    background-color: rgba(251, 73, 151, 1);
+    width: 200px;
+    height: 57px;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    margin-top: 37px;
+    font-weight: bolder;
+}
+
+.wrapperImage {
+    width: 500px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+}
+.image1 {
+    margin-left: 50px;
+    width: 450px;
+    height: 450px;
+}
+.image2 {
+    position: relative;
+    /* bottom: 450px; */
+    right: 430px;
+    width: 450px;
+    height: 450px;
+}

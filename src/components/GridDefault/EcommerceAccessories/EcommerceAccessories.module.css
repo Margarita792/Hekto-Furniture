@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 53px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 53px;
+
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 15px 15px 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.wrapIcons {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    transition: 0.3s ease, color 0.3s ease;
+    position: relative;
+    top:10px;
+    left: 50px;
+}
+.wrapIcons {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    transition: 0.3s ease, color 0.3s ease;
+    position: relative;
+    top:170px;
+    left: 10px;
+}
+.wrapIcon:hover .icon {
+    opacity: 1;
+    visibility: visible;
+  }
+.icon {
+    margin: 1px 0px 1px 0px;
+    height: 20px;
+    width: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    
+}
+.wrapIcon {
+    height: 250px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(246, 247, 251, 1);
+    transition: 0.3s ease;
+}
+.wrapIcon:hover {
+    background-color: rgba(235, 244, 243, 1);
+}
+.image {
+    position: relative;
+    top: 35px;
+    right: 55px;
+    height: 150px;
+    width: 150px;
+    transition: 0.3s ease;
+}
+.titleProduct {
+    color: rgba(21, 24, 117, 1);
+    font-size: 18px;
+    font-weight: bolder;
+}
+.wrapText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    width: 280px;
+    transition: 0.3s ease, color 0.3s ease;
+}
+.wrapPrice {
+        display: flex;
+        flex-wrap: wrap;
+}
+.textNewPrice {
+    color: #151875;
+    margin-right: 10px;
+}
+.textOldPrice {
+    color: rgba(251, 36, 72, 1);
+    text-decoration: line-through;
+}
+.link {
+    text-decoration: none;
+}

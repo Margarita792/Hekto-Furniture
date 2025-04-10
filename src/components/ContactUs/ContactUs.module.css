@@ -1,0 +1,152 @@
+.containerContactUs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.wrapContactUs {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap ;
+}
+.wrapInform {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.innerInformationAboutUs{
+    width: 400px;
+    height: 180px;
+    margin-bottom: 20px;
+}
+.titleInformationAboutUs {
+    color: rgba(21, 24, 117, 1);
+    font-size: 26px;
+    font-weight: bold;
+}
+.titleInformationAboutUs:hover {
+    color: rgba(251, 46, 134, 1);
+}
+.textLoremIpsum {
+    color: rgba(138, 143, 185, 1);
+    font-size: 16px;
+}
+.imageInformationAboutUs {
+    width: 50px;
+}
+
+.innerGetInTouch {
+    width: 400px;
+    /* height: 180px; */
+}
+.titleGetInTouch {
+    color: rgba(21, 24, 117, 1);
+    font-size: 26px;
+    font-weight: bold;
+}
+.textLoremIpsum {
+    color: rgba(138, 143, 185, 1);
+    font-size: 16px;
+}
+.inputYourName {
+    width: 140px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid rgba(138, 143, 185, 1);
+    outline: none;
+    margin: 0px 15px 30px 0px;
+}
+.inputYourEmail {
+    width: 140px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid rgba(138, 143, 185, 1);
+    outline: none;
+    margin: 0px 0px 30px 0px;
+}
+.inputSubject {
+    width: 300px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid rgba(138, 143, 185, 1);
+    outline: none;
+    margin: 0px 0px 30px 0px;
+}
+.inputTypeYourMessege {
+    width: 300px;
+    height: 80px;
+    border-radius: 3px;
+    border: 1px solid rgba(138, 143, 185, 1);
+    outline: none;
+    margin: 0px 0px 30px 0px;
+}
+.buttonSendMail {
+    background-color: rgba(251, 46, 134, 1);
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+}
+.wrapContactWay {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 400px;
+}
+.titleContactWay {
+    color: rgba(21, 24, 117, 1);
+    font-size: 26px;
+    font-weight: bold;
+}
+.innerContact {
+    width: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.ellipse {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.textContact {
+    width: 190px;
+    color: rgba(138, 143, 185, 1);
+}
+.innerAddress {
+    width: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.textAddress {
+    width: 190px;
+    color: rgba(138, 143, 185, 1);
+}
+.innerSupport {
+    width: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.textSupport {
+    width: 150px;
+    color: rgba(138, 143, 185, 1);
+}
+.innerFreeStandard {
+    width: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.textFreeStandard {
+    width: 190px;
+    color: rgba(138, 143, 185, 1);
+}
+.imageContactWay {
+    width: 400px;
+    height: 400px;
+}
+.link {
+    text-decoration: none;
+}

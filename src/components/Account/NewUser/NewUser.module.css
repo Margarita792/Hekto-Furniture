@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+.wrap {
+display: flex;
+flex-wrap: wrap;
+width: 1000px;
+}
+.text {
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    /* width: 150px; */
+}
+.textValue {
+    color: rgba(144, 150, 178, 1);
+    font-size: 18px;
+    margin-left: 20px;
+}

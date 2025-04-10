@@ -1,0 +1,59 @@
+.container1 {
+    height: 479px;
+    background-color: rgba(238, 239, 251, 1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sectionHekto {
+    width: 400px;
+    height: 220px;
+}
+.wrapInputButton {
+    width: 400px;
+    height: 60px;
+}
+.logo {
+    margin-bottom: 31px;
+}
+.input {
+    width: 377px;
+    height: 44px;
+    border-radius: 3px;
+    color: rgba(138, 143, 185, 1);
+    border: none;
+    margin-bottom: 25px;
+}
+.text {
+    color: rgba(138, 143, 185, 1);
+}
+.button {
+    width: 135px;
+    height: 42px;
+    color:white;
+    background-color:rgba(251, 46, 134, 1);
+    border-radius: 3px;
+    border: 1px solid rgba(251, 46, 134, 1);
+    position: relative;
+    bottom: 69px;
+    left: 245px;
+    /* right: 137px; */
+}
+.section {
+    margin: 0px 44px 0px 44px;
+}
+.title {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 41px;
+}
+.container2{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(231, 228, 248, 1);
+}
+.icon {
+    margin: 3px 5px 0px 5px;
+}

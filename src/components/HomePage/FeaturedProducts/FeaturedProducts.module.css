@@ -1,0 +1,155 @@
+.title {
+    color: rgba(26, 11, 91, 1);
+    font-size: 50px;
+    font-weight: bold;
+    width: max-content;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 53px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.wrapper {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 53px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px 0px 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.wrapIcons {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    transition: 0.3s ease, color 0.3s ease;
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+
+.wrapIcon:hover .icon6 {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    z-index: 1;
+    /* Кнопка увеличивается*/
+}
+
+.icon6 {
+    margin-right: 5px;
+    height: 25px;
+    width: 25px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+.wrapIcon {
+    height: 250px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s ease, color 0.3s ease;
+}
+
+.icon {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 200px;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.wrapIcon:hover .icon {
+    transform: scale(0.9) translateY(-10px);
+    /* уменьшается и поднимается вверх */
+}
+
+.wrapText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 145px;
+    width: 280px;
+    transition: 0.3s ease, color 0.3s ease;
+}
+
+.wrapText:hover {
+    background-color: #2F1AC4;
+    color: white;
+}
+
+.titleProduct {
+    color: #FB2E86;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.colorProduct {
+    width: 50px;
+}
+
+.wrapButtonViewDetails {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 110px;
+    right: 25px;
+}
+.wrapButtonViewDetailsSlide2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 120px;
+   right: 30px;
+}
+.wrapButtonViewDetailsSlide3{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    right: 30px;
+}
+
+.button {
+    color: white;
+    background-color: rgba(8, 209, 95, 1);
+    border-radius: 2px;
+    border: none;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    transform: scale(0.8);
+    position: relative;
+    top: 90px;
+    right: 110px;
+}
+
+.wrapIcon:hover .button {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    /* Кнопка увеличивается*/
+}

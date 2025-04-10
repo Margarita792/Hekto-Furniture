@@ -1,0 +1,111 @@
+.container {
+    /* width: 100vw; */
+    height: 464px;
+    background-color: rgba(242, 240, 255, 1);
+    display: flex;
+    flex-wrap: wrap;
+}
+.containerSlider2 {
+    height: 464px;
+    background-color: rgb(184, 190, 247);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .innerPic {
+    margin-top: 0px;
+} */
+.lamp {
+    width: 230px;
+    height: 190px;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 550px;
+    height: 444px;
+}
+
+.innerText {
+    margin-top: 70px;
+    width: 550px;
+    height: 300px;
+}
+
+.innerIcon {
+    width: 550px;
+    display: flex;
+    justify-content: end;
+    /* margin-bottom: 52px; */
+}
+
+.textBestFurniture {
+    color: #FB2E86;
+    font-weight: bolder;
+}
+
+.textNewFurniture {
+    margin-top: 15px;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.textLoremIpsum {
+    color: #8A8FB9;
+}
+
+.button {
+    width: 163px;
+    height: 50px;
+    border-radius: 2px;
+    border: none;
+    background-color: #FB2E86;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+.ellipse1 {
+    position: relative;
+    bottom: 380px;
+    left: 770px;
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+}
+
+.ellipse2 {
+    position: relative;
+    bottom: 390px;
+    left: 420px;
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+}
+.chair {
+    position: relative;
+    bottom: 390px;
+    left: 20px;
+    width: 370px;
+    height: 370px;
+}
+ 
+.discount {
+    position: relative;
+    bottom:780px;
+    left: 1040px;
+    width: 110px;
+    height: 110px;
+}
+.textDiscount {
+    position: relative;
+    bottom:885px;
+    left: 1062px;
+    font-size: 25px;
+    color: white;
+    width: 60px;
+    text-align: center;
+}
