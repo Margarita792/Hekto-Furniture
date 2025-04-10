@@ -1,7 +1,7 @@
 import NavPage from "../GridDefault/NavPage/NavPage";
 import SortAside from "../GridDefault/SortAside/SortAside";
 import Header from "../HomePage/Header/Header";
-import style from './shopLeftSidebar.module.css';
+import style from './ShopLeftSidebar.module.css';
 import goldStar from '../../assets/ShopLeftSidebar/ant-design_star-filled.svg';
 import grayStar from '../../assets/ShopLeftSidebar/ant-design_star-filled (1).svg';
 import searchInput from '../../assets/ShopLeftSidebar/uil_search.svg';
