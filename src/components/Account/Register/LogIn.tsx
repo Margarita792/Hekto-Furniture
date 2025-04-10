@@ -22,7 +22,7 @@ function LogIn() {
   const {
     register,
     handleSubmit,
-    formState: { errors }
+    formState: { }
   } = useForm<TypeUserInterface>();
   const dispatch = useDispatch();
   const onSubmit: SubmitHandler<TypeUserInterface> = (data) => {

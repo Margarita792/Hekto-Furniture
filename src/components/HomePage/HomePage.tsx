@@ -11,8 +11,8 @@ import ShopexOffer from './ShopexOffer/ShopexOffer'
 import TopCategories from './TopCategories/TopCategories'
 import TrendingProducts from './TrendingProducts/TrendingProducts'
 import UniqueFeatures from './UniqueFeatures/UniqueFeatures';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import '../../../node_modules/swiper/swiper.css';
+import '../../../node_modules/swiper/modules/pagination.css';
 function HomePage() {
     return (<>
         <Header />

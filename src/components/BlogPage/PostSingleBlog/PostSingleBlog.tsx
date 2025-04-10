@@ -29,7 +29,7 @@ function PostSingleBlog({ id }: idProps) {
   const {
     register,
     handleSubmit,
-    formState: { errors }
+    formState: {}
   } = useForm<TypeBlogComment>();
   const onSubmit: SubmitHandler<TypeBlogComment> = (data) => {
     dispatch(addBlogComment(data));

@@ -72,7 +72,6 @@ function Header() {
             </div>
         </div>
 
-
         <div className={style.container2}>
             <div className={style.wrapper}>
                 <div className={style.wrapCenter}>
