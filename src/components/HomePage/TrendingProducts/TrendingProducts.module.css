@@ -239,8 +239,9 @@
     }
 
     .clock {
-        text-align: center;
-        margin-top: 10px;
+        height: 200px;
+        position: relative;
+        left: 50px;
     }
     .shelf {
         width: 250px;
