@@ -5,11 +5,13 @@
     display: flex;
     justify-content: space-around;
 }
+
 .wrapLeft {
     display: flex;
     flex-wrap: wrap;
     width: 400px;
 }
+
 .wrapRight {
     display: flex;
     flex-wrap: wrap;
@@ -17,21 +19,25 @@
     justify-content: space-between;
     width: 450px;
 }
+
 .wrapMail {
     display: flex;
     flex-wrap: wrap;
     margin-right: 48px;
 }
+
 .icon {
     width: 16px;
     height: 16px;
     margin: 13px 10px 0px 10px;
 }
+
 .iconCart {
     width: 20px;
     height: 20px;
     margin: 10px 10px 0px 10px;
 }
+
 .text {
     /* margin: 13px 48px 0px 0px; */
     font-size: 16px;
@@ -39,6 +45,10 @@
     margin-top: 12px;
 }
 .wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrapSelect {
     display: flex;
     flex-wrap: wrap;
 }
@@ -52,17 +62,20 @@
     color: white;
     outline: none;
 }
+
 .container2 {
     display: flex;
     justify-content: space-around;
     /* width: 1217px; */
 }
+
 .wrapper {
     height: 78px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .wrapText {
     width: 490px;
     display: flex;
@@ -70,36 +83,42 @@
     align-items: center;
     margin-right: 27px;
 }
+
 .wrapCenter {
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
     width: 630px;
     height: 40px;
 }
+
 .selectHome {
-    color:rgba(251, 46, 134, 1);
+    color: rgba(251, 46, 134, 1);
     border: none;
     outline: none;
 }
+
 .selectPages {
     border: none;
     height: 30px;
     outline: none;
 }
+
 .iconLogo {
     width: 80px;
     margin-right: 60px;
 }
+
 .input {
     height: 30px;
     width: 317px;
     border: 1px solid rgba(231, 230, 239, 1);
     outline: none;
 }
+
 .wrapIconSearch {
-    width:41px;
+    width: 41px;
     height: 34px;
     background-color: rgba(251, 46, 134, 1);
     display: flex;
@@ -108,15 +127,18 @@
     position: relative;
     right: 41px;
 }
+
 .link {
     text-decoration: none;
     color: black;
 }
+
 .wrapCounterShoppingCar {
-position: relative;
-right: 15px;
-bottom: 6px;
+    position: relative;
+    right: 15px;
+    bottom: 6px;
 }
+
 .counterFavorites {
     display: flex;
     justify-content: center;
@@ -126,15 +148,17 @@ bottom: 6px;
     background-color: rgba(251, 46, 134, 1);
     border-radius: 50%;
     color: white;
-   position: absolute;
-   /* bottom: 12px;
+    position: absolute;
+    /* bottom: 12px;
    right: 5px; */
 }
+
 .wrapCounterShoppingCart {
     position: relative;
     right: 18px;
     bottom: 7px;
 }
+
 .counterShoppingCart {
     display: flex;
     justify-content: center;
@@ -147,6 +171,158 @@ bottom: 6px;
     position: absolute;
     /* bottom: 0.2px;
     right: 5px; */
-   
+
 }
 
+
+
+@media (max-width:1024px) {
+
+    .container1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .wrapText {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .input {
+        display: none;
+    }
+
+    .wrapIconSearch {
+        display: none;
+    }
+
+    .wrapMail {
+        margin-right: 0px;
+    }
+
+    .wrapRight {
+        display: flex;
+        justify-content: center;
+    }
+
+    .counterShoppingCart {
+        position: absolute;
+        bottom: 38px;
+        left: 67px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:480px) {
+    .container1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .wrapLeft {
+        width: 130px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+    }
+    .input {
+        display: none;
+    }
+
+    .wrapIconSearch {
+        display: none;
+    }
+
+    .wrapMail {
+        margin-right: 0px;
+    }
+
+    .wrapRight {
+        display: flex;
+       flex-wrap: wrap;
+       justify-content:start;
+       height: 30px;
+       width: 120px;
+    }
+
+    .counterShoppingCart {
+      display: none;
+    }
+    .counterFavorites {
+        display: none;
+    }
+    .icon {
+        width: 8px;
+        height: 8px;
+        margin: 4px 4px 4px 4px;
+    }
+    .iconCart {
+        width: 10px;
+        height: 10px;
+        margin: 4px 4px 4px 4px;;
+    }
+    .text {
+        font-size: 8px;
+        margin: 4px 4px 4px 4px;
+        
+    }
+    .select {
+        margin: 0px;
+        font-size: 8px;
+        height: 20px;
+    }
+    .iconLogo {
+        width: 50px;
+        margin-right: 10px;
+    }
+    .wrapper {
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrapCenter {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 430px;
+    height: 40px;
+    }
+    .wrapText {
+        width: 290px;
+    }
+    .selectHome {
+        font-size: 10px;
+        /* color: rgba(251, 46, 134, 1);
+        border: none;
+        outline: none; */
+    }
+    
+    .selectPages {
+        font-size: 10px;
+        /* border: none;
+        height: 30px;
+        outline: none; */
+    }
+    .textPages {
+        font-size: 10px;
+    }
+    .textProducts {
+        font-size: 10px;
+    }
+    .textBlog {
+        font-size: 10px;
+    }
+    .textShop {
+        font-size: 10px;
+    }
+    .textContact {
+        font-size: 10px;
+    }
+}

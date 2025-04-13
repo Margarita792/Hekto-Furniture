@@ -58,3 +58,88 @@
     color:rgba(21, 24, 117, 1);
     font-size: 14px;
 }
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .wrapImage {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .wrapText {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .sofa {
+        display: none;
+    }
+.ellipse {
+    display: none;
+}
+    .text {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .wrapButtonText {
+        justify-content: center;
+    }
+
+    .button {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 10px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .wrapImage {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .sofa {
+        position: static;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .wrapText {
+        padding: 0px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .wrapButtonText {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 250px;
+        margin: 0px;
+    }
+
+    .textPrice {
+        font-size: 13px;
+    }
+}

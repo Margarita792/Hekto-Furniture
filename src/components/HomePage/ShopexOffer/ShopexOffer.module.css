@@ -38,3 +38,18 @@
     color: rgba(26, 11, 91, 0.3);
     width: 217px;
 }
+@media (max-width:1024px) {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width:480px) {
+    .title{
+        font-size: 20px;
+    }
+    .wrapCard {
+        margin-bottom: 10px;
+    }
+}

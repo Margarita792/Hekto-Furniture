@@ -35,7 +35,7 @@ function Header() {
                 </div>
             </div>
             <div className={style.wrapRight}>
-                <div className={style.wrap}>
+                <div className={style.wrapSelect}>
                     <select className={style.select} onChange={(e) => i18n.changeLanguage(e.target.value)} defaultValue={i18n.language}>
                         <option value="en">English</option>
                         <option value="uk">Ukrainian</option>
@@ -82,18 +82,18 @@ function Header() {
                         <Link to="/" className={style.link}>
                             <p className={style.selectHome}>{t("header.option")}</p>
                         </Link>
-                        <p>{t("header.textPages")}</p>
+                        <p className={style.textPages}>{t("header.textPages")}</p>
                         <Link className={style.link} to="/gridDefault">
-                            <p> {t("header.textProducts")}</p>
+                            <p className={style.textProducts}> {t("header.textProducts")}</p>
                         </Link>
                         <Link className={style.link} to="/blogPage">
-                        <p> {t("header.textBlog")}</p>
+                        <p className={style.textBlog}> {t("header.textBlog")}</p>
                         </Link>
                         <Link className={style.link} to="/shopLeftSidebar">
-                            <p>{t("header.textShop")}</p>
+                            <p className={style.textShop}>{t("header.textShop")}</p>
                         </Link>
                         <Link className={style.link} to="/contactUs">
-                        <p>{t("header.textContact")}</p>
+                        <p className={style.textContact}>{t("header.textContact")}</p>
                         </Link>
                     </div>
                 </div>

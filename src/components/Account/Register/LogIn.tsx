@@ -21,8 +21,7 @@ function LogIn() {
   }, [authoriz])
   const {
     register,
-    handleSubmit,
-    formState: { }
+    handleSubmit
   } = useForm<TypeUserInterface>();
   const dispatch = useDispatch();
   const onSubmit: SubmitHandler<TypeUserInterface> = (data) => {

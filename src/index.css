@@ -17,8 +17,9 @@
         transform: rotate(45deg) !important;
     }
 }
+
 .features {
-    
+
     .swiper-pagination-bullet {
         width: 24px;
         height: 4px;
@@ -37,6 +38,11 @@
         /* transform: rotate(45deg) !important; */
     }
 }
+
+* {
+    font-family: "Inter";
+}
+
 .SlideTopCategories {
     .swiper-pagination-bullet-active {
         width: 10px;
@@ -44,11 +50,13 @@
         background-color: rgba(251, 46, 134, 1);
         border: 1px solid rgba(251, 46, 134, 1);
     }
+
     .swiper-pagination-bullet {
         width: 10px;
         height: 10px;
         border: 1px solid rgba(251, 46, 134, 1);
-        
+
     }
+
     margin-bottom: 125px;
 }

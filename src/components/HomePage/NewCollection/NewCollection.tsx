@@ -1,6 +1,5 @@
 import style from './NewCollection.module.css';
 import lamp from '../../../assets/HomePage/NewCollection/image Lamp.svg';
-// import icon2 from '../../../assets/HomePage/NewCollection/promotional page nav.svg';
 import ellipse from '../../../assets/HomePage/NewCollection/Ellipse 60.svg';
 import icon3 from '../../../assets/HomePage/NewCollection/Shell-Shaped-Armchair-Pink-Velvet-Fabric-One-Seater-Sofa-for-Living-Room 1.svg';
 import discount from '../../../assets/HomePage/NewCollection/Vector 14.svg';
@@ -15,7 +14,7 @@ function NewCollection() {
   return (
     <>
       <Swiper pagination={{ dynamicBullets: true }} modules={[Pagination]} className="header">
-        <SwiperSlide>
+        <SwiperSlide >
           <div className={style.container}>
             <img className={style.lamp} src={lamp} alt="" />
             <div className={style.wrap}>

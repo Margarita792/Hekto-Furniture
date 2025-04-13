@@ -109,3 +109,131 @@
     width: 60px;
     text-align: center;
 }
+@media (max-width:1024px) {
+    .lamp {
+        width: 160px;
+        height: 90px;
+    }
+    .textBestFurniture {
+        font-size: 12px;
+    }
+    
+    .textNewFurniture {
+        width: 350px;
+        font-size: 28px;
+    }
+    
+    .textLoremIpsum {
+        font-size: 17px;
+        width: 350px;
+    }
+    
+    .button {
+        width: 133px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .chair {
+        position: absolute;
+        bottom: 90px;
+        left: 500px;
+        width: 250px;
+        height: 250px;
+    }
+    .innerText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .ellipse1 {
+        position: relative;
+        left: 510px;
+        width: 270px;
+        height: 270px;
+    }
+    
+    .ellipse2 {
+        position: relative;
+        bottom: 350px;
+        left: 220px;
+        width: 270px;
+        height: 270px;
+    }
+}
+@media (max-width:480px) {
+    .lamp {
+        width: 100px;
+        height: 50px;
+    }
+    .container {
+        height: 264px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 550px;
+        height: 244px;
+    }
+    .innerText {
+        width: 220px;
+        height: 190px;
+        margin: 0px 10px 0px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .textBestFurniture {
+        font-size: 10px;
+        width: 200px;
+    }
+    
+    .textNewFurniture {
+        width: 200px;
+        font-size: 15px;
+    }
+    
+    .textLoremIpsum {
+        width: 200px;
+        font-size: 10px;
+    }
+    
+    .button {
+        width: 90px;
+        height: 25px;
+        font-size: 9px;
+    }
+    .chair {
+        position: absolute;
+        bottom: 60px;
+        left: 230px;
+        width: 150px;
+        height: 150px;
+    }
+    .ellipse1 {
+        position: relative;
+        bottom: 260px;
+        left: 220px;
+        width: 170px;
+        height: 170px;
+    }
+    
+    .ellipse2 {
+        position: relative;
+        bottom: 250px;
+        left: 60px;
+        width: 170px;
+        height: 170px;
+    }
+    .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        z-index: 1;
+        display: flex;
+        transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+        box-sizing: content-box;
+    }
+}

@@ -12,7 +12,7 @@ function UniqueFeatures() {
     return (
         <div className={style.container}>
             <div className={style.wrapImage}>
-                <img src={ellipse} alt="" />
+                <img  className={style.ellipse} src={ellipse} alt="" />
                 <img className={style.sofa} src={sofa} alt="" />
             </div>
             <div className={style.wrapText}>

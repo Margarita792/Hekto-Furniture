@@ -138,3 +138,130 @@
 .link {
     text-decoration: none;
 }
+@media (max-width: 1024px) {
+    .wrapper {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .wrapCard {
+        margin: 15px;
+    }
+
+    .titleContainer {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .discountSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapDiscountClock {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin: 15px 0;
+    }
+    .wrapDiscountShelf {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin: 15px 0;
+    }
+
+    .clock {
+        
+        margin-top: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .shelf {
+        margin-top: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .innerDiscountCard {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-bottom: 60px;
+        padding: 10px;
+    }
+
+    .wrapCard {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .innerImage {
+        width: 100%;
+        height: auto;
+    }
+
+    .image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .innerText {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .titleContainer {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .textInnerText {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .wrapDiscountClock {
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .wrapDiscountShelf {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .clock {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .shelf {
+        width: 250px;
+        position: relative;
+        left: 50px;
+    }
+
+    .innerDiscountCard {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .innerImageDiscount {
+        margin-bottom: 10px;
+    }
+
+    .textDiscount {
+        font-size: 14px;
+    }
+    .textOldPrice {
+        font-size: 14px;
+    }
+}
