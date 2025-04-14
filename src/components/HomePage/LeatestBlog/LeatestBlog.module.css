@@ -1,7 +1,6 @@
 .container {
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
     margin-bottom: 115px;
 }
 .wrapper {
@@ -58,4 +57,14 @@ margin-right: 8px;
 }
 .textLink:hover{
     color:rgba(251, 46, 134, 1);
+}
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .wrapCard{
+        margin-bottom: 20px;
+    }
 }

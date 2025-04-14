@@ -3,3 +3,12 @@
     justify-content: center;
     margin-bottom: 96px;
 }
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+        margin: 0px;
+    }
+    .image {
+       width: 100%;
+    }
+}

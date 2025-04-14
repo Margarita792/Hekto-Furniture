@@ -57,3 +57,34 @@
 .icon {
     margin: 3px 5px 0px 5px;
 }
+@media (max-width: 1024px) {
+    .container1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin: 0px 0px 0px 10px;
+    }
+    .container2 {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .container1 {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin: 0px 0px 0px 10px;
+    }
+    .sectionHekto {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px 0px 0px 10px;
+    }
+    .container2 {
+        width: 100%;
+    }
+}

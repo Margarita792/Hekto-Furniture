@@ -52,7 +52,7 @@ function TrendingProducts() {
                 <div className={style.wrapDiscountCard}>
                     <div className={style.innerDiscountCard}>
                         <div className={style.innerImageDiscount}>
-                            <img src={image7} alt="" />
+                            <img className={style.imageDiscount} src={image7} alt="" />
                         </div>
                         <div className={style.innerTextPrice}>
                         <p className={style.textDiscount}>{t("trendingProducts.cardTitle")}</p>
@@ -61,7 +61,7 @@ function TrendingProducts() {
                     </div>
                     <div className={style.innerDiscountCard}>
                         <div className={style.innerImageDiscount}>
-                            <img src={image8} alt="" />
+                            <img className={style.imageDiscount} src={image8} alt="" />
                         </div>
                         <div className={style.innerTextPrice}>
                         <p className={style.textDiscount}>{t("trendingProducts.cardTitle")}</p>
@@ -70,7 +70,7 @@ function TrendingProducts() {
                     </div>
                     <div className={style.innerDiscountCard}>
                         <div className={style.innerImageDiscount}>
-                            <img src={image9} alt="" />
+                            <img className={style.imageDiscount} src={image9} alt="" />
                         </div>
                         <div className={style.innerTextPrice}>
                         <p className={style.textDiscount}>{t("trendingProducts.cardTitle")}</p>

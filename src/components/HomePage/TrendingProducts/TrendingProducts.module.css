@@ -72,7 +72,7 @@
     flex-wrap: wrap;
 }
 .wrapDiscountClock {
-    width: 420px;
+    width: 400px;
     height: 270px;
     background-color: rgba(255, 246, 251, 1);
     padding-left: 25px;
@@ -99,7 +99,7 @@
 }
 .wrapDiscountShelf {
     background-color:rgba(238, 239, 251, 1);
-    width: 420px;
+    width: 400px;
     height: 270px;
     padding-left: 25px;
     padding-top: 24px;
@@ -107,7 +107,7 @@
 }
 .shelf {
     position: relative;
-    left: 100px;
+    left: 70px;
 }
 .innerDiscountCard {
     width: 267px;
@@ -118,7 +118,7 @@
     margin-bottom: 20px;
 }
 .innerImageDiscount {
-    width: 100px;
+    width: 95px;
     height: 74px;
     background-color: rgba(245, 246, 248, 1);
     display: flex;
@@ -159,29 +159,28 @@
     }
 
     .wrapDiscountClock {
-        width: 90%;
+        width: 100%;
         height: auto;
-        padding: 20px;
-        margin: 15px 0;
+        padding: 0px;
+        margin: 5px;
     }
     .wrapDiscountShelf {
-        width: 90%;
+        width: 100%;
         height: auto;
-        padding: 20px;
-        margin: 15px 0;
+        padding: 0px;
+        margin: 5px;
     }
 
     .clock {
-        
-        margin-top: 15px;
-        width: 100%;
-        text-align: center;
+        position: relative;
+        left: 350px;
+     height: 400px;
     }
 
     .shelf {
-        margin-top: 15px;
-        width: 100%;
-        text-align: center;
+        position: relative;
+        left: 350px;
+        width: 400px;
     }
 
     .innerDiscountCard {
@@ -192,10 +191,22 @@
 
 @media (max-width: 480px) {
     .container {
-        margin-bottom: 60px;
-        padding: 10px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding: 0px;
     }
-
+    .wrapper {
+        display: flex;
+        align-items: center;
+        
+        margin-bottom: 0px;
+    }
+    .discountSection {
+        display: flex;
+        align-items:center;
+        flex-wrap: wrap;
+    }
     .wrapCard {
         width: 100%;
         max-width: 300px;
@@ -231,11 +242,15 @@
 
     .wrapDiscountClock {
         width: 100%;
-        padding: 20px 10px;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin: 0px 0px 10px 10px;
     }
     .wrapDiscountShelf {
         width: 100%;
-        padding: 20px 10px;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin: 0px 0px 10px 10px;
     }
 
     .clock {

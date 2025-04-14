@@ -16,6 +16,16 @@
         border: 1px solid #FB2E86;
         transform: rotate(45deg) !important;
     }
+    @media (max-width: 1024px) {
+        .swiper-slide {
+            
+            max-height: 444px;
+        }
+       .swiper-slide-next {
+    display: none !important;
+       }
+    }
+
 }
 
 .features {

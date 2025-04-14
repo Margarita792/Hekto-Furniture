@@ -35,7 +35,7 @@
     width: 224px;
 }
 .wrapTitle {
-    width: 900px;
+    width: 950px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0px;
@@ -66,6 +66,7 @@
 }
 .textTitleProduct {
     color: #151875;
+    font-size: 15px;
 }
 .textNewPrice {
     color: #151875;

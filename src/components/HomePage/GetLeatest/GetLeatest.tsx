@@ -1,17 +1,17 @@
 import style from './GetLeatest.module.css';
-import image from '../../../assets/HomePage/GetLeatest/Rectangle 102.png';
+// import image from '../../../assets/HomePage/GetLeatest/Rectangle 102.png';
 import { useTranslation } from 'react-i18next';
 
 function GetLeatest() {
     const { t } = useTranslation();
     return (
         <div className={style.container}>
-<img className={style.image} src={image} alt="" />
+{/* <img className={style.image} src={image} alt="" /> */}
 <div className={style.wrapper}>
-  
+<div className={style.inner}>
     <p className={style.text}>{t("GetLeatest.subscribeText")}</p>
-    
     <button className={style.button}>{t("GetLeatest.buttonText")}</button>
+</div>
 </div>
         </div>
     )

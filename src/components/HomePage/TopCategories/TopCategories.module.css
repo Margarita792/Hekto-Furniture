@@ -58,3 +58,10 @@
     color:rgba(21, 24, 117, 1);
     font-weight: lighter;
 }
+@media (max-width: 1024px) {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
