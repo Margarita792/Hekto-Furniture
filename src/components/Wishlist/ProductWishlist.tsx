@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
-import { selectFavorites, deleteProductWishlist } from "../../Store/productSlice";
+import { selectFavorites, deleteProductWishlist } from "../../store/productSlice";
 import iconDelete from '../../assets/shoppingCart/ProductShoppingCart/Group 43.svg';
-import { addProduct } from '../../Store/productSlice';
+import { addProduct } from '../../store/productSlice';
 import { useTranslation } from "react-i18next";
 import style from './ProductWishlist.module.css';
 import { useNavigate } from "react-router-dom";

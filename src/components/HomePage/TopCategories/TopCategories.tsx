@@ -2,7 +2,7 @@ import style from './TopCategories.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import { useSelector } from 'react-redux';
-import { selectProducts } from '../../../Store/productSlice';
+import { selectProducts } from '../../../store/productSlice';
 import { TypeProducts } from '../../../interfaces/productInterface';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';

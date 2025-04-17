@@ -3,7 +3,7 @@ import NavPage from "../../GridDefault/NavPage/NavPage";
 import style from './NewUser.module.css'
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
-import { selectNewUser } from "../../../Store/productSlice"
+import { selectNewUser } from "../../../store/productSlice"
 import { TypeUserInterface } from "../../../interfaces/productInterface";
 
 function NewUser() {

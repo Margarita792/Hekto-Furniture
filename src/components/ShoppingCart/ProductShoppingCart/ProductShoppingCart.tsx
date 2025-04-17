@@ -1,7 +1,7 @@
 import style from './ProductShoppingCart.module.css';
 import iconDelete from '../../../assets/shoppingCart/ProductShoppingCart/Group 43.svg';
 import { useSelector } from 'react-redux';
-import { selectCarts, deleteProductCart, increment, decrement, setQuantity } from '../../../Store/productSlice';
+import { selectCarts, deleteProductCart, increment, decrement, setQuantity } from '../../../store/productSlice';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from "react-i18next";
 

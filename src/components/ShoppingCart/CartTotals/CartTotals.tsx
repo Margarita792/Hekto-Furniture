@@ -1,6 +1,6 @@
 import style from './CartTotals.module.css';
 import check from '../../../assets/shoppingCart/CartTotals/uil_check.svg';
-import { selectCarts } from '../../../Store/productSlice';
+import { selectCarts } from '../../../store/productSlice';
 import { useSelector } from 'react-redux';
 import { useTranslation } from "react-i18next";
 import { useNavigate } from 'react-router-dom';

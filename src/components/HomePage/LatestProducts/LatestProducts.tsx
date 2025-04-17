@@ -4,13 +4,13 @@ import heart from '../../../assets/HomePage/LatestProducts/uil_heart-alt.svg';
 import search from '../../../assets/HomePage/LatestProducts/uil_search-plus.svg';
 import sale from '../../../assets/HomePage/LatestProducts/Group_27-removebg-preview-Photoroom.png';
 import { useSelector } from 'react-redux';
-import { selectProducts } from '../../../Store/productSlice';
+import { selectProducts } from '../../../store/productSlice';
 import { TypeProducts } from '../../../interfaces/productInterface';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { addProduct } from '../../../Store/productSlice';
+import { addProduct } from '../../../store/productSlice';
 import { useTranslation } from 'react-i18next';
-import { addFavorites } from '../../../Store/productSlice';
+import { addFavorites } from '../../../store/productSlice';
 
 
 

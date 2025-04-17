@@ -5,7 +5,7 @@ import style from './BlogPage.module.css';
 import icon1 from '../../assets/HomePage/LeatestBlog/Vector.svg';
 import icon2 from '../../assets/HomePage/LeatestBlog/Vector (1).svg';
 import { useSelector } from "react-redux";
-import { selectBlog, selectOfferProduct } from "../../Store/productSlice";
+import { selectBlog, selectOfferProduct } from "../../store/productSlice";
 import { TypeBlog, typeOfferProduct } from "../../interfaces/productInterface";
 import { useNavigate } from "react-router-dom";
 import icon3 from '../../assets/BlogPage/Group 202.svg';

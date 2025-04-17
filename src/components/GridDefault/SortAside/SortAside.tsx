@@ -2,10 +2,10 @@ import style from './SortAside.module.css';
 import icon1 from '../../../assets/GridDefault/SortAside/clarity_grid-view-solid.svg';
 import icon2 from '../../../assets/GridDefault/SortAside/fa-solid_list.svg';
 import { useDispatch } from 'react-redux';
-import { searchTitle } from '../../../Store/productSlice';
-import { selectSearch } from '../../../Store/productSlice';
+import { searchTitle } from '../../../store/productSlice';
+import { selectSearch } from '../../../store/productSlice';
 import { useSelector } from 'react-redux';
-import { qtyProduct, changeCard } from '../../../Store/productSlice';
+import { qtyProduct, changeCard } from '../../../store/productSlice';
 import { useTranslation } from 'react-i18next';
 
 function SortAside() {

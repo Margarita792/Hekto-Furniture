@@ -1,10 +1,10 @@
 import { useSelector } from 'react-redux';
-import { selectProducts } from '../../../Store/productSlice';
-import { selectSearch } from '../../../Store/productSlice';
+import { selectProducts } from '../../../store/productSlice';
+import { selectSearch } from '../../../store/productSlice';
 import { TypeProducts } from '../../../interfaces/productInterface';
 import style from './EcommerceAccessories.module.css';
 import { Link } from 'react-router-dom';
-import { selectQtyProduct, selectChangeCard, } from "../../../Store/productSlice";
+import { selectQtyProduct, selectChangeCard, } from "../../../store/productSlice";
 import CardProduct from '../../shopLeftSidebar/cardProduct/cardProduct';
 import RowProduct from '../../shopLeftSidebar/rowProduct/rowProduct';
 

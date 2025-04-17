@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { selectBlog, selectOfferProduct } from "../../../Store/productSlice";
+import { selectBlog, selectOfferProduct } from "../../../store/productSlice";
 import { useEffect, useState } from "react";
 import style from './PostSingleBlog.module.css';
 import icon1 from '../../../assets/HomePage/LeatestBlog/Vector.svg';
@@ -12,13 +12,13 @@ import image2 from '../../../assets/SingleBlog/Group 140.svg';
 import icon3 from '../../../assets/SingleBlog/Group 202.svg';
 import icon4 from '../../../assets/SingleBlog/Group 203.svg';
 import icon5 from '../../../assets/SingleBlog/Group 204.svg';
-import { selectProducts, selectBlogComment } from "../../../Store/productSlice";
+import { selectProducts, selectBlogComment } from "../../../store/productSlice";
 import { TypeBlog, TypeBlogComment, typeOfferProduct, TypeProducts } from "../../../interfaces/productInterface";
 import { useNavigate } from "react-router-dom";
 import Artboards from "../../HomePage/Artboards/Artboards";
 import Footer from "../../HomePage/Footer/Footer";
 import { useForm, SubmitHandler } from 'react-hook-form';
-import { addBlogComment } from "../../../Store/productSlice";
+import { addBlogComment } from "../../../store/productSlice";
 import { useTranslation } from "react-i18next";
 interface idProps {
   id: string;

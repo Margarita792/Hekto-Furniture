@@ -160,20 +160,21 @@
 }
 @media (max-width: 480px) {
     .container {
-        padding: 0 10px;
+        padding: 0px
     }
     .title {
-        font-size: 24px;
+        font-size: 20px;
         text-align: center;
     }
     .wrapTitle {
+        font-size: 13px;
         width: 100%;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
         text-align: center;
     }
     .wrapCard {
-        margin: 30px 5px;
+        margin: 0px;
     }
 
    

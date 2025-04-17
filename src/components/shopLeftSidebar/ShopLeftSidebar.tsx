@@ -9,17 +9,17 @@ import CardProduct from "./cardProduct/cardProduct";
 import RowProduct from "./rowProduct/rowProduct";
 import Artboards from "../HomePage/Artboards/Artboards";
 import Footer from "../HomePage/Footer/Footer";
-import { selectChangeCard, selectProducts } from '../../Store/productSlice';
+import { selectChangeCard, selectProducts } from '../../store/productSlice';
 import { useSelector } from "react-redux";
-import { selectSearch } from '../../Store/productSlice';
-import { selectMinPrice } from '../../Store/productSlice';
-import { selectMaxPrice } from '../../Store/productSlice';
-import { selectRating } from '../../Store/productSlice';
+import { selectSearch } from '../../store/productSlice';
+import { selectMinPrice } from '../../store/productSlice';
+import { selectMaxPrice } from '../../store/productSlice';
+import { selectRating } from '../../store/productSlice';
 import { TypeProducts } from '../../interfaces/productInterface';
-import { searchMinPrice, searchMaxPrice, ratingChecked } from '../../Store/productSlice'
+import { searchMinPrice, searchMaxPrice, ratingChecked } from '../../store/productSlice'
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { selectQtyProduct } from "../../Store/productSlice";
+import { selectQtyProduct } from "../../store/productSlice";
 
 function ShopLeftSidebar() {
   const products = useSelector(selectProducts);

@@ -4,7 +4,7 @@ import Artboards from '../../HomePage/Artboards/Artboards';
 import Footer from '../../HomePage/Footer/Footer';
 import style from './SignUp.module.css';
 import { useNavigate } from 'react-router-dom';
-import { registerNewUser } from '../../../Store/productSlice';
+import { registerNewUser } from '../../../store/productSlice';
 import { useDispatch } from 'react-redux';
 import { TypeUserInterface } from '../../../interfaces/productInterface';
 import { useForm, SubmitHandler } from 'react-hook-form';

@@ -6,7 +6,7 @@ import Footer from '../../HomePage/Footer/Footer';import { useNavigate } from 'r
 import { useDispatch } from 'react-redux';
 import { TypeUserInterface } from '../../../interfaces/productInterface';
 import { useForm, SubmitHandler } from 'react-hook-form'
-import { selectAuthoriz, setAuthoriz } from '../../../Store/productSlice';
+import { selectAuthoriz, setAuthoriz } from '../../../store/productSlice';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';

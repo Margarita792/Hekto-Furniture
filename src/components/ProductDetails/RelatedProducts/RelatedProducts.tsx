@@ -1,5 +1,5 @@
 import style from './RelatedProducts.module.css';
-import { selectProducts } from '../../../Store/productSlice';
+import { selectProducts } from '../../../store/productSlice';
 import { useSelector } from 'react-redux';
 import img from '../../../assets/ProductDetails/RelatedProducts/Group 243.svg';
 import { TypeProducts } from '../../../interfaces/productInterface';

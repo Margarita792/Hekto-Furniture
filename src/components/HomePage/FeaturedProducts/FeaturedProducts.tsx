@@ -5,13 +5,13 @@ import heart from '../../../assets/HomePage/FeaturedProducts/uil_heart-alt.svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import { useSelector } from 'react-redux';
-import { selectProducts } from '../../../Store/productSlice';
+import { selectProducts } from '../../../store/productSlice';
 import { TypeProducts } from '../../../interfaces/productInterface';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { addProduct } from '../../../Store/productSlice';
+import { addProduct } from '../../../store/productSlice';
 import { useTranslation } from 'react-i18next';
-import { addFavorites } from '../../../Store/productSlice';
+import { addFavorites } from '../../../store/productSlice';
 
 function FeaturedProducts() {
     const { t } = useTranslation();
@@ -47,7 +47,7 @@ function FeaturedProducts() {
                                                     navigate("/wishlist")
                                                 }} className={style.icon6} src={heart} alt="" />
                                             </div>
-                                            <img className={style.icon} src={item.img} alt="" />
+                                            <img className={style.imageFeaturedProducts} src={item.img} alt="" />
                                             <Link className={style.link} to={`/productDetails/${item.id}`}>
                                                 <div className={style.wrapButtonViewDetails}>
                                                     <button className={style.button}>View Details</button>
@@ -85,7 +85,7 @@ function FeaturedProducts() {
                                                     navigate("/wishlist")
                                                 }} className={style.icon6} src={heart} alt="" />
                                             </div>
-                                            <img className={style.icon} src={item.img} alt="" />
+                                            <img className={style.imageFeaturedProducts} src={item.img} alt="" />
                                             <Link className={style.link} to={`/productDetails/${item.id}`}>
                                                 <div className={style.wrapButtonViewDetailsSlide2}>
                                                     <button className={style.button}>View Details</button>
@@ -128,7 +128,7 @@ function FeaturedProducts() {
                                                     navigate("/wishlist")
                                                 }} className={style.icon6} src={heart} alt="" />
                                             </div>
-                                            <img className={style.icon} src={item.img} alt="" />
+                                            <img className={style.imageFeaturedProducts} src={item.img} alt="" />
                                             <div className={style.wrapButtonViewDetailsSlide3}>
                                                 <Link className={style.link} to={`/productDetails/${item.id}`}>
                                                     <button className={style.button} >View Details</button>

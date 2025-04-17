@@ -7,12 +7,12 @@ import cart from '../../../assets/HomePage/Header/fluent_cart-24-regular.svg';
 import icon6 from '../../../assets/HomePage/Header/Hekto.svg';
 import icon7 from '../../../assets/HomePage/Header/uil_search.svg';
 import { Link, useNavigate } from 'react-router-dom';
-import { selectCarts } from '../../../Store/productSlice';
+import { selectCarts } from '../../../store/productSlice';
 import { useSelector } from 'react-redux';
-import { selectFavorites } from "../../../Store/productSlice";
+import { selectFavorites } from "../../../store/productSlice";
 import { useTranslation } from 'react-i18next';
-import { searchTitle } from '../../../Store/productSlice';
-import { selectSearch } from '../../../Store/productSlice';
+import { searchTitle } from '../../../store/productSlice';
+import { selectSearch } from '../../../store/productSlice';
 import { useDispatch } from 'react-redux';
 
 function Header() {

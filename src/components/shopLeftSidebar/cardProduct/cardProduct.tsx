@@ -5,8 +5,8 @@ import style from './cardProduct.module.css';
 import colors from '../../../assets/ShopLeftSidebar/Group 44.svg';
 import { TypeProducts } from '../../../interfaces/productInterface';
 import { Link, useNavigate } from "react-router-dom";
-import { addProduct } from '../../../Store/productSlice';
-import { addFavorites } from '../../../Store/productSlice';
+import { addProduct } from '../../../store/productSlice';
+import { addFavorites } from '../../../store/productSlice';
 import { useDispatch } from "react-redux";
 
 interface CardProductProps {

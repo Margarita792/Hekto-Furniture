@@ -5,7 +5,7 @@ import image7 from '../../../assets/HomePage/TrendingProducts/image 30.svg';
 import image8 from '../../../assets/HomePage/TrendingProducts/image 19.svg';
 import image9 from '../../../assets/HomePage/TrendingProducts/image 28.svg';
 import { useSelector } from 'react-redux';
-import { selectProducts } from '../../../Store/productSlice';
+import { selectProducts } from '../../../store/productSlice';
 import { TypeProducts } from '../../../interfaces/productInterface';
 import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';

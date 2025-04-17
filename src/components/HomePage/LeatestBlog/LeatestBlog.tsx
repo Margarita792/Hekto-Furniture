@@ -2,7 +2,7 @@ import style from './LeatestBlog.module.css';
 import icon1 from '../../../assets/HomePage/LeatestBlog/Vector.svg';
 import icon2 from '../../../assets/HomePage/LeatestBlog/Vector (1).svg';
 import { useTranslation } from 'react-i18next';
-import { selectBlog } from '../../../Store/productSlice';
+import { selectBlog } from '../../../store/productSlice';
 import { useSelector } from 'react-redux';
 import { TypeBlog } from '../../../interfaces/productInterface';
 import { useNavigate } from 'react-router-dom';

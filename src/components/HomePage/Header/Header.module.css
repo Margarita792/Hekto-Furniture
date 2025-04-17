@@ -171,9 +171,6 @@
     border-radius: 50%;
     color: white;
     position: absolute;
-    /* bottom: 0.2px;
-    right: 5px; */
-
 }
 
 
@@ -227,9 +224,11 @@
         display: flex;
         justify-content: space-around;
     }
-
+    .container2 {
+        width: 100%;
+    }
     .wrapLeft {
-        width: 130px;
+        width: 120px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -251,7 +250,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: start;
-        height: 30px;
+        height: 40px;
         width: 120px;
     }
 
@@ -305,12 +304,13 @@
         justify-content: center;
         align-items: center;
         justify-content: space-around;
-        width: 430px;
+        width: 100%;
         height: 40px;
     }
 
     .wrapText {
-        width: 290px;
+        width: 275px;
+        margin: 0px;
     }
 
     .selectHome {

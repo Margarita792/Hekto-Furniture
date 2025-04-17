@@ -8,9 +8,9 @@ import { useSelector } from 'react-redux';
 import { TypeProducts } from '../../../interfaces/productInterface';
 import style from './SingleProduct.module.css'
 import { useEffect, useState } from 'react';
-import { selectProducts } from '../../../Store/productSlice';
+import { selectProducts } from '../../../store/productSlice';
 import { useDispatch } from 'react-redux';
-import { addProduct, addFavorites } from '../../../Store/productSlice';
+import { addProduct, addFavorites } from '../../../store/productSlice';
 import { useTranslation } from 'react-i18next';
 
 interface idProps {
