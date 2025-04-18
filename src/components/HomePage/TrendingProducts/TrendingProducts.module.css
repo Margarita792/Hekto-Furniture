@@ -227,7 +227,7 @@
     .innerText {
         width: 100%;
         height: auto;
-        padding: 10px;
+        padding: 0px;
         text-align: center;
     }
 

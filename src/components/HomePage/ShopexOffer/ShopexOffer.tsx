@@ -1,5 +1,5 @@
 import style from './ShopexOffer.module.css';
-import image1 from '../../../assets/HomePage/ShopexOffer/Group.svg';
+import image1 from '../../../assets/HomePage/ShopexOffer/24-hours-support 1.svg';
 import image2 from '../../../assets/HomePage/ShopexOffer/cashback 1.svg';
 import image3 from '../../../assets/HomePage/ShopexOffer/premium-quality 1.svg';
 import image4 from '../../../assets/HomePage/ShopexOffer/24-hours-support 1.svg';

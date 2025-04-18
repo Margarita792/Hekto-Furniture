@@ -166,16 +166,61 @@
         font-size: 20px;
         text-align: center;
     }
+    .wrapper{
+        gap: 30px;
+    }
     .wrapTitle {
         font-size: 13px;
         width: 100%;
         flex-wrap: wrap;
         align-items: center;
         text-align: center;
+        margin-bottom: 10px;
     }
     .wrapCard {
         margin: 0px;
+        width: 160px;
+        height: 205px;
+        
     }
-
-   
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:156px;
+        height: 160px;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    .wrapIcons {
+        display: none;
+    }
+    .image {
+        position: relative;
+        bottom: 30px;
+        left: 0px;
+        width: 100px;
+        height: 100px;
+        margin: 0px;
+    }
+    .wrapTitlePrice {
+        display: flex;
+        flex-wrap: wrap;
+        width: 160px;
+    }
+    .textTitleProduct{
+        margin: 0px;
+    }
+    .wrapTitlePrice{
+        display: flex;
+        justify-content: center;
+    }
+    .textNewPrice {
+        color: #151875;
+        margin: 0px 10px 0px 0px;
+    }
+    .textOldPrice {
+       margin: 0px;
+    }
 }

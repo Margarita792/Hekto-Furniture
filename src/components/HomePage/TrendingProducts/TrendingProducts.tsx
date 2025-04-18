@@ -13,12 +13,13 @@ import { Link } from 'react-router-dom';
 function TrendingProducts() {
     const products = useSelector(selectProducts);
     const { t } = useTranslation();
+    const isPhone = ()=> window.matchMedia("(max-width:480px)").matches;
     return (
         <>
         <div className={style.container}>
         <p className={style.titleContainer}>{t("trendingProducts.title")}</p>
             <div  className={style.wrapper}>
-            {products.slice(6,10)
+            {products.slice(6,isPhone()?7:10)
             .map((item: TypeProducts, index) => {
                 return (
                     <Link className={style.link} to={`/productDetails/${item.id}`}>
@@ -29,8 +30,8 @@ function TrendingProducts() {
                     <div className={style.innerText}>
                         <p className={style.textInnerText}>{item.title} </p>
                         <div className={style.innerPrice}>
-                            <p className={style.newPrice}>{item.price.toFixed(2)}</p>
-                            <p className={style.oldPrice}>{item.oldPrice.toFixed(2)} </p>
+                            <p className={style.newPrice}>${item.price.toFixed(2)}</p>
+                            <p className={style.oldPrice}>${item.oldPrice.toFixed(2)} </p>
                         </div>
                     </div>
                 </div>
