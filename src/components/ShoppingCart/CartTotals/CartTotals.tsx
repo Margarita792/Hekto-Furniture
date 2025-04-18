@@ -1,14 +1,14 @@
 import style from './CartTotals.module.css';
 import check from '../../../assets/shoppingCart/CartTotals/uil_check.svg';
 import { selectCarts } from '../../../store/productSlice';
-import { useSelector } from 'react-redux';
 import { useTranslation } from "react-i18next";
 import { useNavigate } from 'react-router-dom';
+import { useAppSelector } from '../../../hooks';
 
 function CartTotals() {
     const navigate = useNavigate();
     const { t } = useTranslation();
-    const carts = useSelector(selectCarts);
+    const carts = useAppSelector(selectCarts);
     const Subtotals = () => {
         let sum=0;
         for (let item of carts) {

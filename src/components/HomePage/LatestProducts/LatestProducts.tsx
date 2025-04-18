@@ -3,21 +3,20 @@ import cart from '../../../assets/HomePage/LatestProducts/fluent_cart-24-regular
 import heart from '../../../assets/HomePage/LatestProducts/uil_heart-alt.svg';
 import search from '../../../assets/HomePage/LatestProducts/uil_search-plus.svg';
 import sale from '../../../assets/HomePage/LatestProducts/Group_27-removebg-preview-Photoroom.png';
-import { useSelector } from 'react-redux';
 import { selectProducts } from '../../../store/productSlice';
 import { TypeProducts } from '../../../interfaces/productInterface';
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
 import { addProduct } from '../../../store/productSlice';
 import { useTranslation } from 'react-i18next';
 import { addFavorites } from '../../../store/productSlice';
+import { useAppDispatch, useAppSelector } from '../../../hooks';
 
 
 
 function LatestProducts() {
     const { t } = useTranslation();
-    const dispatch = useDispatch();
-    const products = useSelector(selectProducts);
+    const dispatch = useAppDispatch();
+    const products = useAppSelector(selectProducts);
     return (
         <div className={style.container}>
             <p className={style.title}>{t("latestProducts.title")}</p>

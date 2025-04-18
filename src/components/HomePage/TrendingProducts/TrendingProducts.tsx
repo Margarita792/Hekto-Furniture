@@ -4,14 +4,14 @@ import image6 from '../../../assets/HomePage/TrendingProducts/image 1161.svg';
 import image7 from '../../../assets/HomePage/TrendingProducts/image 30.svg';
 import image8 from '../../../assets/HomePage/TrendingProducts/image 19.svg';
 import image9 from '../../../assets/HomePage/TrendingProducts/image 28.svg';
-import { useSelector } from 'react-redux';
 import { selectProducts } from '../../../store/productSlice';
 import { TypeProducts } from '../../../interfaces/productInterface';
 import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';
+import { useAppSelector } from '../../../hooks';
 
 function TrendingProducts() {
-    const products = useSelector(selectProducts);
+    const products = useAppSelector(selectProducts);
     const { t } = useTranslation();
     const isPhone = ()=> window.matchMedia("(max-width:480px)").matches;
     return (

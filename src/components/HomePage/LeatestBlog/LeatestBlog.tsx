@@ -3,13 +3,13 @@ import icon1 from '../../../assets/HomePage/LeatestBlog/Vector.svg';
 import icon2 from '../../../assets/HomePage/LeatestBlog/Vector (1).svg';
 import { useTranslation } from 'react-i18next';
 import { selectBlog } from '../../../store/productSlice';
-import { useSelector } from 'react-redux';
 import { TypeBlog } from '../../../interfaces/productInterface';
 import { useNavigate } from 'react-router-dom';
+import { useAppSelector } from '../../../hooks';
 
 function LeatestBlog() {
     const navigate = useNavigate();
-    const blog = useSelector(selectBlog);
+    const blog = useAppSelector(selectBlog);
     const { t } = useTranslation();
     return (<>
     <p className={style.titleContainer}>{t("leatestBlog.title")}</p>

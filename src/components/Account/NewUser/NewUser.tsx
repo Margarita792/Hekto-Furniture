@@ -2,12 +2,12 @@ import Header from "../../HomePage/Header/Header";
 import NavPage from "../../GridDefault/NavPage/NavPage";
 import style from './NewUser.module.css'
 import { useTranslation } from "react-i18next";
-import { useSelector } from "react-redux";
 import { selectNewUser } from "../../../store/productSlice"
 import { TypeUserInterface } from "../../../interfaces/productInterface";
+import { useAppSelector } from "../../../hooks";
 
 function NewUser() {
-    const newUser = useSelector(selectNewUser);
+    const newUser = useAppSelector(selectNewUser);
     const { t } = useTranslation();
     return (<>
         <Header />

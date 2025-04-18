@@ -4,24 +4,22 @@ import img3 from '../../../assets/ProductDetails/SingleProduct/Rectangle 137.svg
 import heart from '../../../assets/ProductDetails/SingleProduct/uil_heart-alt.svg';
 import icons from '../../../assets/ProductDetails/SingleProduct/Group 205.svg';
 import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 import { TypeProducts } from '../../../interfaces/productInterface';
 import style from './SingleProduct.module.css'
 import { useEffect, useState } from 'react';
 import { selectProducts } from '../../../store/productSlice';
-import { useDispatch } from 'react-redux';
 import { addProduct, addFavorites } from '../../../store/productSlice';
 import { useTranslation } from 'react-i18next';
+import { useAppDispatch, useAppSelector } from '../../../hooks';
 
 interface idProps {
     id: string;
 }
 function SingleProduct({ id }: idProps) {
     const { t } = useTranslation();
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
     const navigate = useNavigate();
-
-    const products = useSelector(selectProducts);
+    const products = useAppSelector(selectProducts);
     const [item, setItem] = useState<TypeProducts>({
         id: 0,
         img: '',

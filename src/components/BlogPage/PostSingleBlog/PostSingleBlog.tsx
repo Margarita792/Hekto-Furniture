@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
+
 import { selectBlog, selectOfferProduct } from "../../../store/productSlice";
 import { useEffect, useState } from "react";
 import style from './PostSingleBlog.module.css';
@@ -12,7 +12,7 @@ import image2 from '../../../assets/SingleBlog/Group 140.svg';
 import icon3 from '../../../assets/SingleBlog/Group 202.svg';
 import icon4 from '../../../assets/SingleBlog/Group 203.svg';
 import icon5 from '../../../assets/SingleBlog/Group 204.svg';
-import { selectProducts, selectBlogComment } from "../../../store/productSlice";
+import { selectBlogComment, selectProducts } from '../../../store/productSlice'
 import { TypeBlog, TypeBlogComment, typeOfferProduct, TypeProducts } from "../../../interfaces/productInterface";
 import { useNavigate } from "react-router-dom";
 import Artboards from "../../HomePage/Artboards/Artboards";
@@ -20,6 +20,7 @@ import Footer from "../../HomePage/Footer/Footer";
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { addBlogComment } from "../../../store/productSlice";
 import { useTranslation } from "react-i18next";
+import { useAppDispatch, useAppSelector } from "../../../hooks";
 interface idProps {
   id: string;
 }
@@ -29,16 +30,16 @@ function PostSingleBlog({ id }: idProps) {
   const {
     register,
     handleSubmit,
-    formState: {}
+    formState: { }
   } = useForm<TypeBlogComment>();
   const onSubmit: SubmitHandler<TypeBlogComment> = (data) => {
     dispatch(addBlogComment(data));
   }
   const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const offerProduct = useSelector(selectOfferProduct);
-  const blog = useSelector(selectBlog);
-  const blogComment = useSelector(selectBlogComment);
+  const dispatch = useAppDispatch();
+  const offerProduct = useAppSelector(selectOfferProduct);
+  const blog = useAppSelector(selectBlog);
+  const blogComment = useAppSelector(selectBlogComment);
   const [item, setItem] = useState({
     id: 0,
     img: "",
@@ -55,7 +56,7 @@ function PostSingleBlog({ id }: idProps) {
       }
     }
   }, [id]);
-  const products = useSelector(selectProducts);
+  const products = useAppSelector(selectProducts);
   const { t } = useTranslation();
   return (<>
     <Header />
@@ -134,83 +135,83 @@ function PostSingleBlog({ id }: idProps) {
         {blogComment.map((item: TypeBlogComment, index) => {
           return (
             <div key={index} className={style.wrapBlogComment}>
-                <p className= {style.nameBlogComment}>{item.name}</p>
-              <p className= {style.emailBlogComment}> {item.email}</p>
-              <p className= {style.commentBlogComment}>{item.comment}</p>
+              <p className={style.nameBlogComment}>{item.name}</p>
+              <p className={style.emailBlogComment}> {item.email}</p>
+              <p className={style.commentBlogComment}>{item.comment}</p>
             </div>
           )
         })}
       </div>
 
       <div className={style.filterAside}>
-                <div className={style.innerSearch}>
-                    <p className={style.textSearch}>{t("BlogPage.search")}</p>
-                    <input className={style.inputSearch} type="text" placeholder={t("BlogPage.searchPlaceholder")} />
+        <div className={style.innerSearch}>
+          <p className={style.textSearch}>{t("BlogPage.search")}</p>
+          <input className={style.inputSearch} type="text" placeholder={t("BlogPage.searchPlaceholder")} />
+        </div>
+        <p className={style.titleCategories}>{t("BlogPage.categories")}</p>
+        <div className={style.innerCategories}>
+          <p className={style.textCategories}>{t("BlogPage.categoryHobbies")}</p>
+          <p className={style.textCategories}>{t("BlogPage.categoryWomen")}</p>
+          <p className={style.textCategories}>{t("BlogPage.categoryWomen")}</p>
+          <p className={style.textCategories}>{t("BlogPage.categoryWomen")}</p>
+          <p className={style.textCategories}>{t("BlogPage.categoryWomen")}</p>
+          <p className={style.textCategories}>{t("BlogPage.categoryWomen")}</p>
+        </div>
+        <p className={style.textRecentPost}>{t("BlogPage.recentPost")}</p>
+        {blog.slice(0, 4)
+          .map((item: TypeBlog, index) => {
+            return (
+              <div key={index} className={style.innerRecentPost}>
+                <img className={style.imgRecentPost} src={item.img} alt="" />
+                <div>
+                  <p className={style.titleRecentPost}>{item.title}</p>
+                  <p className={style.dateRecentPost}>{item.date}</p>
                 </div>
-                <p className={style.titleCategories}>{t("BlogPage.categories")}</p>
-                <div className={style.innerCategories}>
-                    <p className={style.textCategories}>{t("BlogPage.categoryHobbies")}</p>
-                    <p className={style.textCategories}>{t("BlogPage.categoryWomen")}</p>
-                    <p className={style.textCategories}>{t("BlogPage.categoryWomen")}</p>
-                    <p className={style.textCategories}>{t("BlogPage.categoryWomen")}</p>
-                    <p className={style.textCategories}>{t("BlogPage.categoryWomen")}</p>
-                    <p className={style.textCategories}>{t("BlogPage.categoryWomen")}</p>
+              </div>
+            )
+          })}
+        <p className={style.textSaleProduct}>{t("BlogPage.saleProduct")}</p>
+        {blog.slice(3, 6)
+          .map((item: TypeBlog, index) => {
+            return (
+              <div key={index} className={style.innerRecentPost}>
+                <img className={style.imgRecentPost} src={item.img} alt="" />
+                <div>
+                  <p className={style.titleRecentPost}>{item.title}</p>
+                  <p className={style.dateRecentPost}>{item.date}</p>
                 </div>
-                <p className={style.textRecentPost}>{t("BlogPage.recentPost")}</p>
-                {blog.slice(0, 4)
-                    .map((item: TypeBlog, index) => {
-                        return (
-                            <div key={index} className={style.innerRecentPost}>
-                                <img className={style.imgRecentPost} src={item.img} alt="" />
-                                <div>
-                                    <p className={style.titleRecentPost}>{item.title}</p>
-                                    <p className={style.dateRecentPost}>{item.date}</p>
-                                </div>
-                            </div>
-                        )
-                    })}
-                <p className={style.textSaleProduct}>{t("BlogPage.saleProduct")}</p>
-                {blog.slice(3, 6)
-                    .map((item: TypeBlog, index) => {
-                        return (
-                            <div key={index} className={style.innerRecentPost}>
-                                <img className={style.imgRecentPost} src={item.img} alt="" />
-                                <div>
-                                    <p className={style.titleRecentPost}>{item.title}</p>
-                                    <p className={style.dateRecentPost}>{item.date}</p>
-                                </div>
-                            </div>
-                        )
-                    })}
-                <p className={style.textOfferProduct}>{t("BlogPage.offerProduct")}</p>
-                <div className={style.wrapOfferProduct}>
-                    {offerProduct.slice(0, 4)
-                        .map((item: typeOfferProduct, index) => {
-                            return (
-                                <div key={index} className={style.innerOfferProduct}>
-                                    <img className={style.imageOfferProduct} src={item.img} alt="" />
-                                    <p className={style.titleOfferProduct}>{item.title}</p>
-                                    <p className={style.priceOfferProduct}>$ {item.minPrice} - ${item.maxPrice}</p>
-                                </div>
-                            )
-                        })
-                    }
+              </div>
+            )
+          })}
+        <p className={style.textOfferProduct}>{t("BlogPage.offerProduct")}</p>
+        <div className={style.wrapOfferProduct}>
+          {offerProduct.slice(0, 4)
+            .map((item: typeOfferProduct, index) => {
+              return (
+                <div key={index} className={style.innerOfferProduct}>
+                  <img className={style.imageOfferProduct} src={item.img} alt="" />
+                  <p className={style.titleOfferProduct}>{item.title}</p>
+                  <p className={style.priceOfferProduct}>$ {item.minPrice} - ${item.maxPrice}</p>
                 </div>
-                <p className={style.textFollow}>{t("BlogPage.follow")}</p>
-                <div className={style.innerIconsFollow}>
-                    <img src={icon3} alt="" />
-                    <img src={icon4} alt="" />
-                    <img src={icon5} alt="" />
-                </div>
-                <p className={style.textTags}>{t("BlogPage.tags")}</p>
-                <div className={style.innerTags}>
-                    <p className={style.textInnerTags}>{t("BlogPage.tagGeneral")}</p>
-                    <p className={style.textInnerTags}>{t("BlogPage.tagAtsanil")}</p>
-                    <p className={style.textInnerTags}>{t("BlogPage.tagInsas")}</p>
-                    <p className={style.textInnerTags}>{t("BlogPage.tagBibsaas")}</p>
-                    <p className={style.textInnerTags}>{t("BlogPage.tagNulla")}</p>
-                </div>
-            </div>
+              )
+            })
+          }
+        </div>
+        <p className={style.textFollow}>{t("BlogPage.follow")}</p>
+        <div className={style.innerIconsFollow}>
+          <img src={icon3} alt="" />
+          <img src={icon4} alt="" />
+          <img src={icon5} alt="" />
+        </div>
+        <p className={style.textTags}>{t("BlogPage.tags")}</p>
+        <div className={style.innerTags}>
+          <p className={style.textInnerTags}>{t("BlogPage.tagGeneral")}</p>
+          <p className={style.textInnerTags}>{t("BlogPage.tagAtsanil")}</p>
+          <p className={style.textInnerTags}>{t("BlogPage.tagInsas")}</p>
+          <p className={style.textInnerTags}>{t("BlogPage.tagBibsaas")}</p>
+          <p className={style.textInnerTags}>{t("BlogPage.tagNulla")}</p>
+        </div>
+      </div>
     </div>
     <Artboards />
     <Footer />

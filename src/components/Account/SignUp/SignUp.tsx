@@ -5,10 +5,10 @@ import Footer from '../../HomePage/Footer/Footer';
 import style from './SignUp.module.css';
 import { useNavigate } from 'react-router-dom';
 import { registerNewUser } from '../../../store/productSlice';
-import { useDispatch } from 'react-redux';
 import { TypeUserInterface } from '../../../interfaces/productInterface';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
+import { useAppDispatch } from '../../../hooks';
 
 function SignUp() {
   const { t } = useTranslation();
@@ -16,7 +16,7 @@ function SignUp() {
     register,
     handleSubmit
   } = useForm<TypeUserInterface>();
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const onSubmit: SubmitHandler<TypeUserInterface> = (data) => {
     dispatch(registerNewUser(data));
   }

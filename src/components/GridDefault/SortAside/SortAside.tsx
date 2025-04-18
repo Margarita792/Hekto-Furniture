@@ -1,17 +1,16 @@
 import style from './SortAside.module.css';
 import icon1 from '../../../assets/GridDefault/SortAside/clarity_grid-view-solid.svg';
 import icon2 from '../../../assets/GridDefault/SortAside/fa-solid_list.svg';
-import { useDispatch } from 'react-redux';
 import { searchTitle } from '../../../store/productSlice';
 import { selectSearch } from '../../../store/productSlice';
-import { useSelector } from 'react-redux';
 import { qtyProduct, changeCard } from '../../../store/productSlice';
 import { useTranslation } from 'react-i18next';
+import { useAppDispatch, useAppSelector } from '../../../hooks';
 
 function SortAside() {
-    const search = useSelector(selectSearch);
+    const search = useAppSelector(selectSearch);
     const { t } = useTranslation();
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
     return (
         <div className={style.container}>
             <div className={style.wrapText}>

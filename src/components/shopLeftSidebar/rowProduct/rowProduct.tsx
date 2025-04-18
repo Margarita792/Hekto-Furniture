@@ -7,14 +7,14 @@ import { TypeProducts } from '../../../interfaces/productInterface';
 import { Link, useNavigate } from "react-router-dom";
 import { addProduct } from '../../../store/productSlice';
 import { addFavorites } from '../../../store/productSlice';
-import { useDispatch } from "react-redux";
+import { useAppDispatch } from '../../../hooks';
 
 interface CardProductProps {
   product: TypeProducts;
 }
 function RowProduct({product}:CardProductProps) {
       const navigate = useNavigate();
-      const dispatch = useDispatch();
+      const dispatch = useAppDispatch();
   return (
     <div>
               <Link className={style.link} to={`/productDetails/${product.id}`} >

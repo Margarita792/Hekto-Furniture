@@ -4,20 +4,19 @@ import cart from '../../../assets/HomePage/FeaturedProducts/fluent_cart-24-regul
 import heart from '../../../assets/HomePage/FeaturedProducts/uil_heart-alt.svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
-import { useSelector } from 'react-redux';
 import { selectProducts } from '../../../store/productSlice';
 import { TypeProducts } from '../../../interfaces/productInterface';
 import { Link, useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
 import { addProduct } from '../../../store/productSlice';
 import { useTranslation } from 'react-i18next';
 import { addFavorites } from '../../../store/productSlice';
+import { useAppDispatch, useAppSelector } from '../../../hooks';
 
 function FeaturedProducts() {
     const { t } = useTranslation();
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
     const navigate = useNavigate();
-    const products = useSelector(selectProducts);
+    const products = useAppSelector(selectProducts);
     return (<>
         <div className={style.container}>
             <p className={style.title}>{t("featuredProducts.title")}</p>

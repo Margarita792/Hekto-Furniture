@@ -4,7 +4,6 @@ import Header from "../HomePage/Header/Header";
 import style from './BlogPage.module.css';
 import icon1 from '../../assets/HomePage/LeatestBlog/Vector.svg';
 import icon2 from '../../assets/HomePage/LeatestBlog/Vector (1).svg';
-import { useSelector } from "react-redux";
 import { selectBlog, selectOfferProduct } from "../../store/productSlice";
 import { TypeBlog, typeOfferProduct } from "../../interfaces/productInterface";
 import { useNavigate } from "react-router-dom";
@@ -13,10 +12,11 @@ import icon4 from '../../assets/BlogPage/Group 203.svg';
 import icon5 from '../../assets/BlogPage/Group 204.svg';
 import Artboards from "../HomePage/Artboards/Artboards";
 import Footer from "../HomePage/Footer/Footer";
+import { useAppSelector } from "../../hooks";
 function BlogPage() {
-    const offerProduct = useSelector(selectOfferProduct);
+    const offerProduct = useAppSelector(selectOfferProduct);
     const navigate = useNavigate();
-    const blog = useSelector(selectBlog);
+    const blog = useAppSelector(selectBlog);
     const { t } = useTranslation();
 
     return (<>

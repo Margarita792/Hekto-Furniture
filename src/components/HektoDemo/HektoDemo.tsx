@@ -1,19 +1,18 @@
 import check from '../../assets/shoppingCart/CartTotals/uil_check.svg';
 import Header from "../HomePage/Header/Header";
 import { useTranslation } from "react-i18next";
-import { useSelector } from 'react-redux';
 import { deleteCart, selectCarts } from '../../store/productSlice';
 import style from './HektoDemo.module.css'
 import Footer from '../HomePage/Footer/Footer';
 import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useAppDispatch, useAppSelector } from '../../hooks';
 
 
 function HektoDemo() {
     const { t } = useTranslation();
-    const carts = useSelector(selectCarts);
+    const carts = useAppSelector(selectCarts);
     const navigate = useNavigate();
-const dispatch = useDispatch()
+const dispatch = useAppDispatch()
     const Subtotals = () => {
         let sum = 0;
         for (let item of carts) {

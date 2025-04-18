@@ -8,18 +8,17 @@ import icon6 from '../../../assets/HomePage/Header/Hekto.svg';
 import icon7 from '../../../assets/HomePage/Header/uil_search.svg';
 import { Link, useNavigate } from 'react-router-dom';
 import { selectCarts } from '../../../store/productSlice';
-import { useSelector } from 'react-redux';
 import { selectFavorites } from "../../../store/productSlice";
 import { useTranslation } from 'react-i18next';
 import { searchTitle } from '../../../store/productSlice';
 import { selectSearch } from '../../../store/productSlice';
-import { useDispatch } from 'react-redux';
+import { useAppDispatch, useAppSelector } from '../../../hooks';
 
 function Header() {
-    const carts = useSelector(selectCarts);
-    const search = useSelector(selectSearch);
-    const favorites = useSelector(selectFavorites);
-    const dispatch = useDispatch();
+    const carts = useAppSelector(selectCarts);
+    const search = useAppSelector(selectSearch);
+    const favorites = useAppSelector(selectFavorites);
+    const dispatch = useAppDispatch();
     const navigate = useNavigate();
     const { t, i18n } = useTranslation();
     return (<>

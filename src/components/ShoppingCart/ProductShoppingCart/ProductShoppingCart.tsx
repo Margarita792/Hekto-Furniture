@@ -1,14 +1,13 @@
 import style from './ProductShoppingCart.module.css';
 import iconDelete from '../../../assets/shoppingCart/ProductShoppingCart/Group 43.svg';
-import { useSelector } from 'react-redux';
 import { selectCarts, deleteProductCart, increment, decrement, setQuantity } from '../../../store/productSlice';
-import { useDispatch } from 'react-redux';
 import { useTranslation } from "react-i18next";
+import { useAppDispatch, useAppSelector } from '../../../hooks';
 
 function ProductShoppingCart() {
     const { t } = useTranslation();
-    const carts = useSelector(selectCarts);
-    const dispatch = useDispatch()
+    const carts = useAppSelector(selectCarts);
+    const dispatch = useAppDispatch();
     const deleteProduct = (id: number) => {
         let copyCarts = carts.slice();
         const copyCartsFilter = copyCarts.filter(item => {

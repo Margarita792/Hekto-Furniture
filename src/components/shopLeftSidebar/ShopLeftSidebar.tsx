@@ -10,26 +10,25 @@ import RowProduct from "./rowProduct/rowProduct";
 import Artboards from "../HomePage/Artboards/Artboards";
 import Footer from "../HomePage/Footer/Footer";
 import { selectChangeCard, selectProducts } from '../../store/productSlice';
-import { useSelector } from "react-redux";
 import { selectSearch } from '../../store/productSlice';
 import { selectMinPrice } from '../../store/productSlice';
 import { selectMaxPrice } from '../../store/productSlice';
 import { selectRating } from '../../store/productSlice';
 import { TypeProducts } from '../../interfaces/productInterface';
-import { searchMinPrice, searchMaxPrice, ratingChecked } from '../../store/productSlice'
-import { useDispatch } from "react-redux";
+import { searchMinPrice, searchMaxPrice, ratingChecked } from '../../store/productSlice';
 import { Link } from "react-router-dom";
 import { selectQtyProduct } from "../../store/productSlice";
+import { useAppDispatch, useAppSelector } from "../../hooks";
 
 function ShopLeftSidebar() {
-  const products = useSelector(selectProducts);
-  const search = useSelector(selectSearch);
-  const minPrice = useSelector(selectMinPrice);
-  const maxPrice = useSelector(selectMaxPrice);
-  const ratingFilter = useSelector(selectRating);
-  const qtyProduct = useSelector(selectQtyProduct);
-  const changeCard = useSelector(selectChangeCard);
-  const dispatch = useDispatch();
+  const products = useAppSelector(selectProducts);
+  const search = useAppSelector(selectSearch);
+  const minPrice = useAppSelector(selectMinPrice);
+  const maxPrice = useAppSelector(selectMaxPrice);
+  const ratingFilter = useAppSelector(selectRating);
+  const qtyProduct = useAppSelector(selectQtyProduct);
+  const changeCard = useAppSelector(selectChangeCard);
+  const dispatch = useAppDispatch();
   return (<>
     <Header />
     <NavPage title="Shop Left Sidebar" redText="Shop Left Sidebar" />

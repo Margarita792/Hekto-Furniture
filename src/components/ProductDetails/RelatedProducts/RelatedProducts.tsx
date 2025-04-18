@@ -1,13 +1,13 @@
 import style from './RelatedProducts.module.css';
 import { selectProducts } from '../../../store/productSlice';
-import { useSelector } from 'react-redux';
 import img from '../../../assets/ProductDetails/RelatedProducts/Group 243.svg';
 import { TypeProducts } from '../../../interfaces/productInterface';
 import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
+import { useAppSelector } from '../../../hooks';
 
 function RelatedProducts() {
-    const products = useSelector(selectProducts);
+    const products = useAppSelector(selectProducts);
     const { t } = useTranslation();
     return (<>
     <div  className={style.container}>
