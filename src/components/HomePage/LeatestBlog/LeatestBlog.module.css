@@ -95,7 +95,7 @@
     .container {
         width: 100%;
         gap: 10px;
-        margin: 0px;
+        margin: 0px 0px 10px 0px;
     }
     .titleContainer {
         font-size: 20px;
@@ -106,13 +106,14 @@
         width: 100%;
         height: auto;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         margin: 0px;
     }
 
     .image {
-        width: 100px;
-        margin-right: 5px;
+        width: 160px;
+        margin:0px;
     }
 
     .innerIconText {
@@ -141,11 +142,8 @@
         height: 18px;
     }
     .description {
-        position: relative;
-        bottom:40px;
-        left: 105px;
        font-size: 8px;
-        width: 190px;
+        width: 140px;
         margin:0px;
     }
     .textLink {
