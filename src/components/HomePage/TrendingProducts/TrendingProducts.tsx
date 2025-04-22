@@ -19,7 +19,7 @@ function TrendingProducts() {
         <div className={style.container}>
         <p className={style.titleContainer}>{t("trendingProducts.title")}</p>
             <div  className={style.wrapper}>
-            {products.slice(6,isPhone()?7:10)
+            {products.slice(3,isPhone()?7:10)
             .map((item: TypeProducts, index) => {
                 return (
                     <Link className={style.link} to={`/productDetails/${item.id}`}>

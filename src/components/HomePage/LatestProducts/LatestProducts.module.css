@@ -3,27 +3,31 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
+
 .title {
     color: #151875;
     font-size: 48px;
     font-weight: bolder;
     margin-bottom: 19px;
 }
+
 .wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .wrapCard {
     margin: 60px 18px 60px 18px;
 }
+
 .card {
     display: flex;
     align-items: center;
     justify-content: center;
-    width:360px;
+    width: 360px;
     height: 306px;
     border: 2px solid rgba(238, 239, 251, 1);
     transition: 0.3s ease;
@@ -34,6 +38,7 @@
     right: 30px;
     width: 224px;
 }
+
 .wrapTitle {
     width: 950px;
     display: flex;
@@ -55,44 +60,53 @@
 .link {
     text-decoration: none;
 }
+
 .wrapTitlePrice {
     display: flex;
     justify-content: space-between;
-    width:350px;
+    width: 350px;
 }
+
 .wrapTitleCard {
     border-bottom: 2px solid rgba(238, 239, 251, 1);
     width: 154px;
 }
+
 .textTitleProduct {
     color: #151875;
     font-size: 15px;
 }
+
 .textNewPrice {
     color: #151875;
     margin-right: 10px;
 }
+
 .textOldPrice {
     color: rgba(251, 36, 72, 1);
     text-decoration: line-through;
 }
+
 .wrapPrice {
     display: flex;
     flex-wrap: wrap;
 }
+
 .wrapIcons {
     position: relative;
-    top:70px;
+    top: 70px;
     right: 300px;
     height: 100px;
     display: flex;
     flex-direction: column;
     transition: 0.3s ease;
 }
-.card:hover .icon{
+
+.card:hover .icon {
     opacity: 1;
     visibility: visible;
 }
+
 .icon {
     margin: 7px 0px 7px 0px;
     width: 20px;
@@ -101,6 +115,7 @@
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 }
+
 .sale {
     width: 80px;
     position: relative;
@@ -111,44 +126,55 @@
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
     z-index: 1;
 }
-.card:hover .sale{
+
+.card:hover .sale {
     opacity: 1;
     visibility: visible;
 }
+
 @media (max-width: 1024px) {
     .container {
         padding: 0 20px;
     }
+
     .title {
         font-size: 36px;
         text-align: center;
     }
+
     .wrapTitle {
         width: 600px;
         justify-content: center;
     }
+
     .textRed {
         margin: 0px;
     }
+
     .text {
         margin: 0px 10px 0px 10px;
     }
+
     .wrapTitlePrice {
-        width:300px;
+        width: 300px;
     }
+
     .wrapCard {
         margin: 40px 10px;
     }
+
     .card {
         width: 300px;
         height: auto;
         flex-direction: column;
         padding: 20px 0;
     }
+
     .image {
         width: 180px;
         margin-bottom: 15px;
     }
+
     .wrapIcons {
         right: 0;
         top: 20px;
@@ -158,17 +184,23 @@
         height: auto;
     }
 }
+
 @media (max-width: 480px) {
     .container {
-        padding: 0px
+        padding: 0px;
+        height: auto;
     }
+
     .title {
         font-size: 20px;
         text-align: center;
     }
-    .wrapper{
+
+    .wrapper {
         gap: 30px;
+       
     }
+
     .wrapTitle {
         font-size: 13px;
         width: 100%;
@@ -177,25 +209,29 @@
         text-align: center;
         margin-bottom: 10px;
     }
+
     .wrapCard {
         margin: 0px;
         width: 160px;
         height: 205px;
-        
+
     }
+
     .card {
         display: flex;
         align-items: center;
-        justify-content: center;
-        width:156px;
+        justify-content: flex-end;
+        width: 156px;
         height: 160px;
         margin: 0px;
         padding: 0px;
-        
+
     }
+
     .wrapIcons {
         display: none;
     }
+
     .image {
         position: relative;
         bottom: 30px;
@@ -204,23 +240,33 @@
         height: 100px;
         margin: 0px;
     }
+
     .wrapTitlePrice {
         display: flex;
         flex-wrap: wrap;
         width: 160px;
     }
-    .textTitleProduct{
+
+    .textTitleProduct {
         margin: 0px;
+        text-align: center;
     }
-    .wrapTitlePrice{
+
+    .wrapTitlePrice {
         display: flex;
         justify-content: center;
     }
+
     .textNewPrice {
         color: #151875;
         margin: 0px 10px 0px 0px;
     }
+
     .textOldPrice {
-       margin: 0px;
+        margin: 0px;
+    }
+
+    .sale {
+        display: none;
     }
 }

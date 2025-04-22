@@ -18,10 +18,9 @@ function LeatestBlog() {
         {blog.slice(0, 3)
             .map((item:TypeBlog, index) => {
                 return(
-                
                     <div key={index}  className={style.wrapper}>
                         <div className={style.wrapCard}>
-                            <img className={style.image1} src={item.img} alt="" />
+                            <img className={style.image} src={item.img} alt="" />
                             <div className={style.innerIconText}>
                                 <img className={style.icon} src={icon1} alt="" />
                                 <p className={style.textInner}>{item.author}</p>
@@ -33,7 +32,6 @@ function LeatestBlog() {
                             <p onClick={()=>{navigate("/blogPage")}} className={style.textLink}>{item.linkReadMore}</p>
                         </div>
                     </div>
-                
            ) })}
            </div>
     </>)

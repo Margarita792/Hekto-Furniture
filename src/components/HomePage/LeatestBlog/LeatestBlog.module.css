@@ -3,68 +3,154 @@
     align-items: center;
     margin-bottom: 115px;
 }
+
 .wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .wrapCard {
     margin: 0px 20px 0px 20px;
     width: 370px;
     height: 490px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
 .titleContainer {
-    color:rgba(21, 24, 117, 1);
+    color: rgba(21, 24, 117, 1);
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 80px;
     margin-top: 0px;
     text-align: center;
 }
+
 .innerIconText {
     display: flex;
     flex-wrap: wrap;
     margin-left: 14px;
 }
+
 .icon {
-margin-right: 8px;
+    margin-right: 8px;
 }
+
 .textInner {
-    color:rgba(21, 24, 117, 1);
+    color: rgba(21, 24, 117, 1);
     margin-right: 23px;
 }
+
 .title {
     margin-left: 19px;
     font-size: 20px;
-    color:rgba(21, 24, 117, 1);
+    color: rgba(21, 24, 117, 1);
     font-weight: bold;
 }
-.title:hover{
-    color:rgba(251, 46, 134, 1);
+
+.title:hover {
+    color: rgba(251, 46, 134, 1);
 }
+
 .description {
-    color:rgba(114, 113, 143, 1);
+    color: rgba(114, 113, 143, 1);
     width: 300px;
     margin-left: 19px;
 }
+
 .textLink {
-    color:rgba(21, 24, 117, 1);
+    color: rgba(21, 24, 117, 1);
     text-decoration: underline;
     margin-left: 19px;
     margin-top: 22px;
     cursor: pointer;
 }
-.textLink:hover{
-    color:rgba(251, 46, 134, 1);
+
+.textLink:hover {
+    color: rgba(251, 46, 134, 1);
 }
+
 @media (max-width: 1024px) {
     .container {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+        gap:10px;
     }
-    .wrapCard{
-        margin-bottom: 20px;
+.titleContainer {
+    margin: 20px 0px 20px 0px;
+}
+   
+    .wrapCard {
+        margin: 0px;;
+        width: 370px;
+        height: 490px;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        gap: 10px;
+        margin: 0px;
+    }
+    .titleContainer {
+        font-size: 20px;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .wrapCard {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+
+    .image {
+        width: 100px;
+        margin-right: 5px;
+    }
+
+    .innerIconText {
+        height: 20px;
+        display: flex;
+        align-items: center;
+        width: 120px;
+        margin: 0px;
+    }
+
+    .icon {
+        margin: 0px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .textInner {
+        font-size: 6px;
+        margin: 5px;
+    }
+
+    .title {
+        margin: 5px 0px 5px 0px;
+        font-size: 9px;
+        width: 160px;
+        height: 18px;
+    }
+    .description {
+        position: relative;
+        bottom:40px;
+        left: 105px;
+       font-size: 8px;
+        width: 190px;
+        margin:0px;
+    }
+    .textLink {
+        font-size: 13px;
+        margin:0px;
+        text-align: end;
     }
 }

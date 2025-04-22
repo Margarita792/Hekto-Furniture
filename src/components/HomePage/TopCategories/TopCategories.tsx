@@ -11,7 +11,8 @@ import { useAppSelector } from '../../../hooks';
 function TopCategories() {
     const { t } = useTranslation();
     const products = useAppSelector(selectProducts);
-    return (
+    return (<>
+        <p className={style.titleContainer}>{t("TopCategories.title")}</p>
         <Swiper
             pagination={{
                 dynamicBullets: true,
@@ -20,8 +21,9 @@ function TopCategories() {
             className="SlideTopCategories"
         >
             <SwiperSlide>
+          
                 <div className={style.container}>
-                    <p className={style.titleContainer}>{t("TopCategories.title")}</p>
+                  
                     <div className={style.wrapper}>
                         {products.slice(0, 4)
                             .map((item: TypeProducts, index) => {
@@ -45,7 +47,6 @@ function TopCategories() {
 
             <SwiperSlide>
                 <div className={style.container}>
-                    <p className={style.titleContainer}>Top Categories</p>
                     <div className={style.wrapper}>
 
                         {products.slice(0, 4)
@@ -71,7 +72,6 @@ function TopCategories() {
 
             <SwiperSlide>
                 <div className={style.container}>
-                    <p className={style.titleContainer}>Top Categories</p>
                     <div className={style.wrapper}>
                         {products.slice(0, 4)
                             .map((item: TypeProducts, index) => {
@@ -94,6 +94,6 @@ function TopCategories() {
                 </div>
             </SwiperSlide>
         </Swiper>
-    )
+        </> )
 }
 export default TopCategories;

@@ -1,6 +1,6 @@
-*{
+/* *{
     outline: 1px solid teal;
-}
+} */
 .header {
 
     .swiper-pagination-bullet {
@@ -75,6 +75,4 @@
         border: 1px solid rgba(251, 46, 134, 1);
 
     }
-
-    margin-bottom: 125px;
 }
