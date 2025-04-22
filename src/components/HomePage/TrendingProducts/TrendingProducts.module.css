@@ -138,9 +138,13 @@
     text-decoration: none;
 }
 @media (max-width: 1024px) {
+    .container{
+       margin: 0px;
+    }
     .wrapper {
         justify-content: center;
         gap: 30px;
+        margin: 0px;
     }
 
     .wrapCard {
@@ -153,33 +157,54 @@
     }
 
     .discountSection {
-        flex-direction: column;
-        align-items: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
     }
 
     .wrapDiscountClock {
-        width: 100%;
-        height: auto;
+        width: 45%;
+        height: 180px;
         padding: 0px;
-        margin: 5px;
+        margin: 0px 0px 10px 0px;
+    }
+    
+    .title {
+        width: 250px;
+        font-size: 35px;
+        margin: 5px 0px 0px 5px; 
+    }
+    .text {
+        font-size: 30px;
+        width: 150px;
+        text-align: start;
+        margin: 10px 0px;
+    }
+    .clock {
+        height: 170px;
+        position: relative;
+        left: 180px;
+        bottom: 160px;
     }
     .wrapDiscountShelf {
-        width: 100%;
-        height: auto;
+        width: 45%;
+        height: 180px;
         padding: 0px;
-        margin: 5px;
+        margin: 0px 0px 10px 0px;
     }
 
-    .clock {
+    /* .clock {
         position: relative;
         left: 350px;
      height: 400px;
-    }
+    } */
 
     .shelf {
+        width: 200px;
         position: relative;
-        left: 350px;
-        width: 400px;
+        left: 150px;
+        bottom: 110px;
     }
 
     .innerDiscountCard {
