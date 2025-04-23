@@ -228,7 +228,7 @@
         width: 100%;
     }
     .wrapLeft {
-        width: 120px;
+        width: 140px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -249,9 +249,10 @@
     .wrapRight {
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content:space-between;
+        align-items: center;
         height: 40px;
-        width: 120px;
+        width: 140px;
     }
 
     .counterShoppingCart {
@@ -263,28 +264,27 @@
     }
 
     .icon {
-        width: 8px;
-        height: 8px;
-        margin: 4px 4px 4px 4px;
+        width: 10px;
+        height: 10px;
+        margin: 0px;
     }
 
     .iconCart {
-        width: 10px;
-        height: 10px;
-        margin: 4px 4px 4px 4px;
-        ;
+        width: 15px;
+        height: 15px;
+        margin: 2px 4px 4px 4px;
     }
 
     .text {
-        font-size: 8px;
-        margin: 4px 4px 4px 4px;
+        font-size: 10px;
+        margin: 0px;
 
     }
 
     .select {
         margin: 0px;
-        font-size: 8px;
-        height: 20px;
+        font-size: 10px;
+        height: 12px;
     }
 
     .iconLogo {
