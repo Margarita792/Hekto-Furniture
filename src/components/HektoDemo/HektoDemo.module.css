@@ -335,3 +335,113 @@
     border: none;
     cursor: pointer;
 }
+@media (max-width: 1024px) {
+  .wrapTitle,
+  .wrapProduct,
+  .wrapProductShoppingCart,
+  .wrapperCartTotals,
+  .containerContactInformation {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .titleHectoDemo {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .wrapTitle {
+    justify-content: center;
+  }
+
+  .wrapImageText {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .imgDelete {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .inputEmail,
+  .inputFirstName,
+  .inputLastName,
+  .input,
+  .inputBangladesh,
+  .inputCode {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .wrapTitle,
+  .wrapProduct,
+  .wrapProductShoppingCart,
+  .wrapperCartTotals,
+  .containerContactInformation {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .titleHectoDemo {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .titleProduct,
+  .titlePrice,
+  .titleQuantity,
+  .titleTotal {
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .wrapImageText {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .wrapPrice,
+  .wrapButton,
+  .wrapTotal {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .innerIconTextCartTotals {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .buttonCartTotals,
+  .buttonContinueShopping {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .inputEmail,
+  .inputFirstName,
+  .inputLastName,
+  .input,
+  .inputBangladesh,
+  .inputCode {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .containerContactInformation {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

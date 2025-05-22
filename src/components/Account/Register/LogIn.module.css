@@ -67,3 +67,66 @@ margin: 5px 0px 5px 0px;
     color: black;
     cursor: pointer;
 }
+@media (max-width: 1024px) {
+    .container {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .wrap {
+        width: 90%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .subtitle,
+    .text,
+    .textLogIn {
+        font-size: 14px;
+    }
+
+    .input,
+    .inputSignUp {
+        width: 90%;
+        max-width: 250px;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        padding: 30px 10px;
+        height: auto;
+    }
+
+    .wrap {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        box-shadow: none;
+        padding: 15px 10px;
+    }
+
+    .title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .subtitle,
+    .text,
+    .textLogIn {
+        font-size: 13px;
+        width: 70%;
+        padding: 0 10px;
+    }
+
+    .input,
+    .inputSignUp {
+        width: 100%;
+        max-width: 300px;
+        font-size: 14px;
+    }
+
+    .inputSignUp {
+        height: 40px;
+    }
+}
