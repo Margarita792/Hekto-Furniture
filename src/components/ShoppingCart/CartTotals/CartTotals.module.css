@@ -94,3 +94,32 @@
     border-radius: 3px;
     cursor: pointer;
 }
+@media (max-width: 1024px) {
+  .container {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  .wrapperCartTotals {
+    width: 100%;
+  }
+.titleContainer {
+    color: rgba(29, 49, 120, 1);
+    font-size: 20px;
+    font-weight: bold;
+    width: 165px;
+    margin: 5px 0 5px 0;
+    text-align: center;
+}
+  .buttonCartTotals {
+    width: 90%;
+  }
+
+  .innerSubtotalsCartTotals,
+  .innerCartTotals,
+  .innerIconTextCartTotals {
+    width: 90%;
+   
+  }
+}

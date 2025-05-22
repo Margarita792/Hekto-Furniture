@@ -365,3 +365,150 @@ align-items: center;
     font-size: 16px;
     color: rgba(138, 143, 185, 1);
 }
+@media (max-width: 1024px) {
+  .wrapBlog,
+  .description2,
+  .innerDescription3,
+  .wrapCardProducts,
+  .innerPreviousNextPost,
+  .wrapBlogComment {
+    width: 100%;
+  }
+.innerImages {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+  .description1 {
+    width: 90%;
+  }
+
+  .wrapCardProducts {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .innerCardProducts {
+    width: 45%;
+  }
+
+  .innerRowBlog {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  .filterAside {
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .innerRecentPost {
+    width: 100%;
+  }
+
+  .wrapInput {
+    width: 100%;
+  }
+
+  .inputYourcomment {
+    width: 100%;
+  }
+
+  .buttonContinueShopping {
+    width: 100%;
+  }
+}@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrapBlog {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .description1,
+  .description2,
+  .innerDescription3,
+  .innerImages,
+  .wrapCardProducts,
+  .innerPreviousNextPost,
+  .wrapBlogComment {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .innerCardProducts {
+    width: 100%;
+  }
+
+  .inputYourName,
+  .inputYourEmail {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .innerIconsFollow {
+    justify-content: center;
+  }
+
+  .textSearch,
+  .textRecentPost,
+  .textSaleProduct,
+  .textOfferProduct,
+  .textFollow,
+  .textTags,
+  .titleCategories {
+    font-size: 18px;
+  }
+
+  .inputSearch {
+    width: 100%;
+  }
+
+  .imageRowBlog {
+    width: 80px;
+    height: 80px;
+  }
+.image {
+    width: 100%;
+}
+  .innerRowBlog {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .wrapInput {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inputYourcomment {
+    width: 100%;
+  }
+
+  .buttonContinueShopping {
+    width: 100%;
+  }
+
+  .wrapOfferProduct {
+    justify-content: center;
+  }
+
+  .innerOfferProduct {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

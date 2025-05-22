@@ -242,8 +242,6 @@
 .containerShopLeftSidebar {
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
-  /* justify-content: center; */
   width: 1000px;
   height: 100%;
 }
@@ -325,4 +323,14 @@
 .link {
   text-decoration: none;
   color: black;
+}
+@media (max-width: 1024px) {
+ .containerSide {
+  display: none;
+ }
+}
+@media (max-width: 767px) {
+  .containerSide {
+  display: none;
+ }
 }

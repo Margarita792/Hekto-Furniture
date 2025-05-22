@@ -3,7 +3,6 @@
     margin-left: 20px;
     margin-right: 0px;
     width: 702px;
-    /* justify-content: center; */
 }
 
 .wrapper {
@@ -67,6 +66,8 @@
     height: 80px;
 }
 .imgDelete {
+    width: 15px;
+    height: 15px;
     position: relative;
     bottom: 70px;
     right: 10px;
@@ -131,4 +132,103 @@
 .textTotal {
     color: #1D3178;
     font-weight: bold;
+}
+@media (max-width: 767px) {
+    .container {
+    max-height: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+}
+.wrapProduct {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+   margin: 5px;
+    width: 98%;
+}
+.wrapper {
+    max-height: 100%;
+    width: 100%;
+}
+  .wrapTitle {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+     margin: 5px 0 5px 5px;
+}
+   .titleProduct{
+   font-size: 15px;
+    width: 110px;
+   }
+   .titlePrice {
+    font-size: 15px;
+    width: 90px;
+}
+
+.titleQuantity {
+    font-size: 15px;
+    width: 70px;
+}
+
+.titleTotal {
+    font-size: 15px;
+    width: 70px;
+}
+.wrapImageText {
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: center;
+    width: 140px;
+}
+.textPrice {
+   font-size: 13px;
+   font-weight: normal;
+}
+.wrapPrice {
+    width: 60px;
+    height: 50px;
+    /* display:flex;
+    align-items: center;
+    justify-content: center; */
+}
+.textPrice {
+    color: #1D3178;
+    font-weight: bold;
+}
+.wrapButton {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 50px;
+}
+.button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color:rgb(214, 215, 220);
+    color:rgb(147, 148, 149);
+}
+.input {
+    width: 40px;
+    height: 18px;
+    border: none;
+    background-color:rgb(241, 242, 246);
+    outline: none;
+    color:rgb(147, 148, 149);
+    text-align: center;
+}
+.wrapTotal {
+    width: 70px;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.textTotal {
+    font-size: 13px;
+}
 }

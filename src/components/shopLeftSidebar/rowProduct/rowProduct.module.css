@@ -34,8 +34,6 @@
   }
   
   .wrapCard {
-    /* width: 820px; */
-    /* height: 280px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -58,14 +56,13 @@
   .innerPrice {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100px;
   }
   
   .price {
     color: rgba(17, 28, 133, 1);
     font-size: 14px;
     font-weight: bolder;
+    margin-right: 10px;
   }
   
   .oldPrice {
@@ -92,3 +89,54 @@
     text-decoration: none;
     color: black;
   }
+ @media (max-width: 767px) {
+  .mainContainer {
+    margin-bottom: 60px;
+  }
+
+  .containerProducts {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .image {
+    height: 160px;
+    width: auto;
+  }
+
+  .wrapText {
+    width: 100%;
+    margin: 15px 0 0 0;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .innerTitleIcon,
+  .innerPrice,
+  .innerIcons {
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .price,
+  .oldPrice {
+    font-size: 13px;
+  }
+}

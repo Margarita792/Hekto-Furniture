@@ -80,8 +80,8 @@ function PostSingleBlog({ id }: idProps) {
           <em className={style.description3}>{t("PostSingleBlog.description3")}</em>
         </div>
         <div className={style.innerImages}>
-          <img className={style.image1} src={image1} alt="" />
-          <img src={image2} alt="" />
+          <img className={style.image} src={image1} alt="" />
+          <img className={style.image} src={image2} alt="" />
         </div>
         <p className={style.description2}>{t("PostSingleBlog.description2")}</p>
         <div className={style.wrapCardProducts}>

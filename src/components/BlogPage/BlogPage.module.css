@@ -114,7 +114,6 @@ margin-right: 8px;
 .innerRecentPost {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content:center; */
     align-items: center;
     width: 280px;
     height: 50px;
@@ -204,4 +203,107 @@ margin-right: 8px;
 .textInnerTags:hover{
     color: rgba(251, 46, 134, 1);
     cursor: pointer;
+}
+@media (max-width: 1023px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+.image {
+    width: 100%;
+}
+  .sectionBlog {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .filterAside {
+    width: 100%;
+    max-width: 90%;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .wrapOfferProduct,
+  .innerTags,
+  .innerCategories,
+  .innerRecentPost {
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .titleContainer {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+.image {
+    width: 100%;
+}
+  .title {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .description,
+  .textLink {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .textAuthor,
+  .textDate {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .filterAside {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .inputSearch {
+    width: 100%;
+  }
+
+  .innerRecentPost {
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+
+  .titleRecentPost {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .wrapOfferProduct {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .innerOfferProduct {
+    margin-right: 10px;
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .imageOfferProduct {
+    width: 100%;
+    height: auto;
+  }
+
+  .innerIconsFollow {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .textInnerTags {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
 }

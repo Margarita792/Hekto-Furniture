@@ -49,7 +49,7 @@ function Header() {
                         <p className={style.text}>{t("header.text1")}</p>
 
                         <img className={style.icon} src={icon3} alt="" />
-                        <div className={style.wrapCounterShoppingCar}>
+                        <div className={style.wrapCounterFavorites}>
                             <p className={style.counterFavorites}>{favorites.length}</p>
                         </div>
                     </div>
@@ -62,6 +62,7 @@ function Header() {
                 </Link>
                 <Link className={style.link} to="/shoppingCart">
                     <div className={style.wrap}>
+                        <p className={style.text}>{t("header.text3")}</p>
                         <img className={style.iconCart} src={cart} alt="" />
                         <div className={style.wrapCounterShoppingCart}>
                             <p className={style.counterShoppingCart}>{carts.length}</p>

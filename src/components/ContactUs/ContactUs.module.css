@@ -150,3 +150,87 @@
 .link {
     text-decoration: none;
 }
+@media (max-width: 1024px) {
+  .wrapContactUs {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .wrapInform,
+  .wrapContactWay {
+    width: 90%;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .innerInformationAboutUs,
+  .innerGetInTouch {
+    width: 90%;
+  }
+
+  .imageContactWay {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapContactUs {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+  }
+
+  .wrapInform,
+  .wrapContactWay {
+    width: 100%;
+     height: 100%;
+    margin-bottom: 30px;
+  }
+
+  .innerInformationAboutUs,
+  .innerGetInTouch {
+    width: 100%;
+  }
+
+  .titleInformationAboutUs,
+  .titleGetInTouch,
+  .titleContactWay {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .inputYourName,
+  .inputYourEmail,
+  .inputSubject,
+  .inputTypeYourMessege {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .buttonSendMail {
+    width: 100%;
+  }
+
+  .innerContact,
+  .innerAddress,
+  .innerSupport,
+  .innerFreeStandard {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .textContact,
+  .textAddress,
+  .textSupport,
+  .textFreeStandard {
+    width: 100%;
+  }
+
+  .imageContactWay {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -97,3 +97,36 @@
 .link {
     text-decoration: none;
 }
+@media (max-width: 1023px) {
+    .container,
+    .wrapper {
+        justify-content: center;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+
+    .card {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .wrapIcon {
+        width: 100%;
+    }
+
+    .wrapText {
+        width: 100%;
+    }
+
+    .wrapIcons {
+        top: 150px;
+        left: 10px;
+    }
+
+    .image {
+        height: 140px;
+        width: 140px;
+        top: 25px;
+        right: 30px;
+    }
+}

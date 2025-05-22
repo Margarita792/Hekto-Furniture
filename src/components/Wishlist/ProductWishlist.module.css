@@ -3,7 +3,6 @@
     margin-left: 120px;
     margin-right: 0px;
     width: 702px;
-    /* justify-content: center; */
 }
 
 .wrapper {
@@ -141,4 +140,68 @@
     color:white;
     border-radius: 3px;
     margin-left: 50px;
+}
+@media (max-width: 1024px) {
+  .container,
+  .wrapper,
+  .wrapTitle,
+  .wrapProductWishlist {
+    width: 50%;
+    margin-left: 0;
+    padding: 0 5px;
+  }
+
+
+  .imgDelete {
+    bottom: 60px;
+    right: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapTitle {
+    display: none; /* Скрываем заголовки колонок, делаем мобильную верстку блочной */
+  }
+
+  .wrapProductWishlist {
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid rgba(225, 225, 228, 1);
+    padding-bottom: 15px;
+  }
+
+  .wrapImageText {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .imgProduct {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  .imgDelete {
+    /* position: absolute; */
+    bottom: 50px;
+    right: 12px;
+  }
+
+  .innerText {
+    flex: 1;
+  }
+
+  .wrapPrice,
+  .wrapButton,
+  .wrapTotal {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+
+  .buttonAddCart {
+    /* width: 100%; */
+    margin: 15px 0 0 0;
+  }
 }
