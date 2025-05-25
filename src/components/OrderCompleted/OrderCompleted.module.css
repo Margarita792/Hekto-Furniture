@@ -127,10 +127,7 @@
     max-width: 220px;
   }
 
-  .image2,
-  .image3,
-  .clock,
-  .checklist {
+  .wrapImage {
     display: none;
   }
 }

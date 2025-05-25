@@ -99,7 +99,6 @@
 }
 .textPrice {
     color: #1D3178;
-    font-weight: bold;
 }
 .wrapButton {
     display:flex;
@@ -108,8 +107,8 @@
     width: 150px;
 }
 .button {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     border: none;
     background-color:rgb(214, 215, 220);
     color:rgb(147, 148, 149);
@@ -196,7 +195,6 @@
 }
 .textPrice {
     color: #1D3178;
-    font-weight: bold;
 }
 .wrapButton {
     display:flex;

@@ -82,7 +82,7 @@ function Header() {
                         <Link to="/" className={style.link}>
                             <p className={style.selectHome}>{t("header.option")}</p>
                         </Link>
-                        <p className={style.textPages}>{t("header.textPages")}</p>
+                        {/* <p className={style.textPages}>{t("header.textPages")}</p> */}
                         <Link className={style.link} to="/gridDefault">
                             <p className={style.textProducts}> {t("header.textProducts")}</p>
                         </Link>

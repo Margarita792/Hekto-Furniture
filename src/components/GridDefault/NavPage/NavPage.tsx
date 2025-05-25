@@ -11,7 +11,7 @@ function NavPage({title="Shop Grid Default",redText="Shop Grid Default"}: NavPag
                 <h1 className={style.title}>{title}</h1>
                 <div className={style.inner}>
                     <Link to="/" className={style.link}>
-                    <p className={style.textHome}>Home. Page</p>
+                    <p className={style.textHome}>Home</p>
                     </Link>
                     <p className={style.redText}>{redText}</p>
                 </div>
