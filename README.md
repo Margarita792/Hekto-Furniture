@@ -1,50 +1,58 @@
-# React + TypeScript + Vite
+# Hekto Furniture Shop 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive e-commerce React application with filtering, cart logic, and routing. Built using TypeScript, Redux Toolkit, and SCSS.
 
-Currently, two official plugins are available:
+## Tech Stack
+- React
+- TypeScript
+- Redux Toolkit
+- Vite
+- SCSS Modules
+- React Router
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Product filtering and sorting
+- Add/remove products to/from cart
+- Dynamic product page via routing
+- Global state management (Redux)
+- Clean and responsive layout
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository:
+   git clone https://github.com/Margarita792/Hekto-Furniture.git
+2. Install dependencies:
+   npm install
+3. Start the development server:
+   npm run dev
 
-- Configure the top-level `parserOptions` property like this:
+## 🌐 Live Demo
+[hekto-furniture-shop.netlify.app](https://hekto-furniture-shop.netlify.app)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Screenshots
+![Homepage](./src/Screenshot%202025-07-28%20155225.png)
+![Product List](./src/Screenshot%202025-07-28%20155250.png)
+![Cart](./src/Screenshot%202025-07-28%20155336.png)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🇺🇦 Опис українською
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Односторінковий застосунок-магазин, створений за допомогою React, TypeScript, Redux Toolkit та SCSS.
+
+### Основні технології:
+- React, TypeScript, Redux Toolkit, Vite
+- React Router, хуки `useParams`, `useNavigate`, `useEffect`
+- Глобальний стан: кошик, фільтрація, товари
+- SCSS-модулі та адаптивна верстка
+
+## Як запустити проект
+
+1. Клонуй репозиторій:
+   ```bash
+   git clone https://github.com/Margarita792/Hekto-Furniture.git
+2. Встановити залежності:
+   npm install
+3. Запусти локальний сервер:
+   npm run dev
+
